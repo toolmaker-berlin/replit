@@ -1,0 +1,7 @@
+    1  julia
+    2  cp -r ~/.julia ~/Test-1/ 
+    3  ls -a
+    4  ls .jula
+    5  ls .julia
+    6  history
+    7  history >his.txt

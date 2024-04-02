@@ -1,0 +1,13 @@
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Crayons = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
+Debugger = "31a5f54b-26ea-5ae9-a837-f05ce5417438"
+Infiltrator = "5903a43b-9cc3-4c30-8d17-598619ec4e9b"
+OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
+OhMyREPL = "5fb14364-9ced-5910-84b2-373655c76a03"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+ReplMaker = "b873ce64-0db9-51f5-a568-4457d8e49576"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+Term = "22787eb5-b846-44ae-b979-8e399b8463ab"
+Terming = "5a1048b7-9ca6-4e8a-8e2e-1f932e78ac4e"

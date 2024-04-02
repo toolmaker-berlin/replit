@@ -1,0 +1,41 @@
+# .julia Verzeichnis erzeugen usw.
+clear
+if [ -L ~/.julia ]; then
+  pwd
+  # Link usw war noch vorhanden
+else
+  if [ -d ~/.julia ]; then
+    # Verzeichnis zuvor löschen!
+    rm -rf ~/.julia/
+  fi
+
+  # Link neu angelegen
+  ln -s $(pwd)/.julia/ ~/.julia
+
+fi
+
+cp $(pwd)/.vimrc ~/.vimrc
+cp $(pwd)/.vifmrc ~/.vifmrc
+
+cp -r $(pwd)/.local/ /home/runner/
+
+alias c="clear"
+alias x="vifm"
+alias ed="vim"
+alias m="julia main.jl"
+alias r="julia main.jl"
+alias e="vim main.jl"
+alias nvim="vim"
+alias jj="julia -q"
+alias la="ls -a1"
+alias ll="ls -al1"
+
+
+# PROMPT='R %(?.%F{green}ok.%F{red}?%?)%f %B%F{63}%1~%f%b %(!.#.$) '
+export PS1='\W$ '
+
+export MYVIFMRC=~/.vifmrc
+
+source zatuin 
+
+

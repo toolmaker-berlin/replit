@@ -1,0 +1,3 @@
+[ Info: PyCall is using python3 (Python 3.10.4) at /nix/store/8hl7hygmjds5ci7wznk14qmpmsgbn7a8-python3-3.10.4/bin/python3, libpython = /nix/store/8hl7hygmjds5ci7wznk14qmpmsgbn7a8-python3-3.10.4/lib/libpython3.10.so.1.0
+[ Info: /home/runner/Test-1/.julia/packages/PyCall/1gn3u/deps/deps.jl has been updated
+[ Info: /home/runner/.julia/prefs/PyCall has been updated
