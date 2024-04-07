@@ -1,5 +1,22 @@
-# .julia Verzeichnis erzeugen usw.
 clear
+# .vim Verzeichnis erzeugen usw.
+if [ -L ~/.vim ]; then
+  clear
+  # Link usw war noch vorhanden
+else
+  if [ -d ~/.vim ]; then
+    # Verzeichnis zuvor löschen!
+    rm -rf ~/.vim/
+  fi
+
+  # Links neu angelegen
+  ln -s $(pwd)/.vim/ ~/.vim
+  ln -s $(pwd)/.vimrc ~/.vimrc
+  ln -s $(pwd)/.vifmrc ~/.vifmrc
+
+fi
+
+# .julia Verzeichnis erzeugen usw.
 if [ -L ~/.julia ]; then
   pwd
   # Link usw war noch vorhanden
@@ -14,28 +31,38 @@ else
 
 fi
 
-cp $(pwd)/.vimrc ~/.vimrc
-cp $(pwd)/.vifmrc ~/.vifmrc
+
+
 
 cp -r $(pwd)/.local/ /home/runner/
 
 alias c="clear"
 alias x="vifm"
 alias ed="vim"
-alias m="julia main.jl"
+alias edn="vim $(pwd)/.vimrc"
+alias edz="vim $(pwd)/z"
+alias ed="vim"
+alias rst="source z"
+alias m="julia mainmenue.jl"
 alias r="julia main.jl"
 alias e="vim main.jl"
 alias nvim="vim"
 alias jj="julia -q"
 alias la="ls -a1"
 alias ll="ls -al1"
+alias qq="exit"
 
-
-# PROMPT='R %(?.%F{green}ok.%F{red}?%?)%f %B%F{63}%1~%f%b %(!.#.$) '
 export PS1='\W$ '
 
 export MYVIFMRC=~/.vifmrc
 
-source zatuin 
+source $(pwd)/zatuin
+
+bind '"\ö": "["'
+bind '"\ä": "]"'
+bind '"\Ö": "{"'
+bind '"\Ä": "}"'
+bind '"\ü": "\\"'
+bind '"\Ü": "|"'
 
 

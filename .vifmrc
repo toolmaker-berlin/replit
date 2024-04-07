@@ -540,6 +540,7 @@ command! update !!clear && git add * && git commit -am "Auto" && git push
 command! load !!clear && git pull
 
 colorscheme Default-256 "dwmlight
+colorscheme Default
 
 filetype *.md mdless --no-color -t mdless-theme %c
 ""glow -p -s light %c

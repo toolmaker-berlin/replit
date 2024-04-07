@@ -5,6 +5,7 @@ function fib(n)
 end
 
 
+
 println("Input eine Zahl:")
 
 user_input = readline()
@@ -13,7 +14,7 @@ println("Du hast die Zahl eingegeben: $number")
 @time fib(200)
 println("fertig!")
 # geht aber dann keine julia shell exit(0)
-for i in 1:2 #  
+fo))}{[]r i in 1:2 #  
 
   println(fib(50+i))
 end
@@ -34,7 +35,7 @@ end
 
 # ... Hier dann weiterer Code (oder Shell verwenden)
 # ...
-# ...
+# ...}}
 println("")
-exit(0)
+# exit(0)_
 
