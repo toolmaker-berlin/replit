@@ -1,7 +1,10 @@
-# ------------------------------------
-# Run (main.jl) DEMO - repl mit Pakete
-# REPLIT macht Fehler - SHELL benutzen
-# ------------------------------------
+# --------------------------
+# Nur 1xRun (main.jl) (DEMO)
+# REPLIT macht Fehler, 
+# besser die SHELL benutzen!
+# 
+# Stand 8. April 2024
+# --------------------------
 
 try
   using Crayons
@@ -12,5 +15,4 @@ end
 
 include("mainmenue.jl")
 
-# Besser in Julia bleiben - KEIN Exit(0)
-# exit(0)
+exit(0)

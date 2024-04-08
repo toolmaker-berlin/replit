@@ -298,3 +298,15 @@
 # time: 2024-04-08 04:23:57 UTC
 # mode: julia
 	println( 22)
+# time: 2024-04-08 04:50:59 UTC
+# mode: shell
+	ls
+# time: 2024-04-08 04:51:39 UTC
+# mode: julia
+	11
+# time: 2024-04-08 04:51:57 UTC
+# mode: julia
+	exit(0)
+# time: 2024-04-08 04:54:55 UTC
+# mode: pkg
+	st
