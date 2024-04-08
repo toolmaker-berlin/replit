@@ -1,4 +1,5 @@
 clear
+
 # .vim Verzeichnis erzeugen usw.
 if [ -L ~/.vim ]; then
   clear
@@ -6,7 +7,8 @@ if [ -L ~/.vim ]; then
 else
   if [ -d ~/.vim ]; then
     # Verzeichnis zuvor löschen!
-    rm -rf ~/.vim/
+    # rm -rf ~/.vim/
+    clear
   fi
 
   # Links neu angelegen
@@ -23,16 +25,14 @@ if [ -L ~/.julia ]; then
 else
   if [ -d ~/.julia ]; then
     # Verzeichnis zuvor löschen!
-    rm -rf ~/.julia/
+    # rm -rf ~/.julia/
+    clear
   fi
 
   # Link neu angelegen
   ln -s $(pwd)/.julia/ ~/.julia
 
 fi
-
-
-
 
 cp -r $(pwd)/.local/ /home/runner/
 
@@ -56,7 +56,7 @@ export PS1='\W$ '
 
 export MYVIFMRC=~/.vifmrc
 
-source $(pwd)/zatuin
+source $(pwd)/.zatuin
 
 bind '"\ö": "["'
 bind '"\ä": "]"'
