@@ -43,4 +43,13 @@ vnoremap ü \
 vnoremap Ü \|
 
 
+" restore cursor position
+augroup restore_pos | au!
+    au BufWinEnter *
+        \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+        \ |   exe 'normal! g`"zz'
+        \ | endif
+augroup end
+
+
 

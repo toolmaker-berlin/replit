@@ -14,7 +14,8 @@ println("Du hast die Zahl eingegeben: $number")
 @time fib(200)
 println("fertig!")
 # geht aber dann keine julia shell exit(0)
-fo))}{[]r i in 1:2 #  
+for i in 1:2 #  
+
 
   println(fib(50+i))
 end

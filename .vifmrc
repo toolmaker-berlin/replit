@@ -4,7 +4,7 @@
 " Zweck: Einstellungen, Tastenbelegung, Commandos, etc.
 " TIP: vifm installieren mit brew (mac)
 "
-" Stand 18. März 2024
+" Stand 8. April 2024
 
 " vim: filetype=vifm :
 " Sample configuration file for vifm on OSX (last updated: 2 April, 2023)
@@ -330,7 +330,8 @@ nnoremap A cw
 " nnoremap A cW
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
-nnoremap ,c :write | edit $MYVIFMRC | restart full<cr>
+nnoremap ,, :write | edit $MYVIFMRC | restart full<cr>
+
 " Open MacVim to edit vifmrc
 """"""nnoremap ,C :!mvim --remote-tab-silent $MYVIFMRC &<cr>
 
@@ -417,12 +418,12 @@ mark 0 ~/
 
 colorscheme molokai ""papercolor-light ""default ""molokai
 set runexec
-"set mouse=a
+"set mouse=a geht nicht
 
 " julia
 filetype {*.jl},<.>,
        \ {RUN Julia}
-       \ clear && julia -q %f && echo 'Press any key to continue...'; read -k1 -s,
+       \ clear && julia -q %f && echo 'Press ENTER to continue ...'; read -r dummy,
        \ {RUN Julia interactiv}
        \ clear && julia -iq %f,
        \ {EDIT and RUN Julia interactiv}
@@ -433,7 +434,7 @@ filetype {*.jl},<.>,
 " ipython
 filetype {*.py},<.>,
        \ {RUN IPython (via PyPy3)}
-       \ clear && pypy3 -m IPython %f && echo 'Press any key to continue...'; read -k1 -s,
+       \ clear && pypy3 -m IPython %f && echo 'Press ENTER to continue ...'; read -r dummy,
        \ {RUN IPython (PyPy3) interactiv}
        \ clear && pypy3 -m IPython -i %f,
        \ {START IPython (PyPy3) REPL only}
@@ -442,11 +443,11 @@ filetype {*.py},<.>,
 
 filetype {*.pyexe},<.>,
        \ {RUN IPython ohne Stop (via PyPy3)}
-       \ clear && pypy3 -m IPython %f #&& echo 'Test (continue...)'; read -k1 -s,
+       \ clear && pypy3 -m IPython %f #&& echo 'Test (continue...)'; read -r dummy,
 
 filetype {*.jlexe},<.>,
        \ {RUN Julia ohne Stop}
-       \ clear && julia -q %f #&& echo 'no key to continue...'; read -k1 -s,
+       \ clear && julia -q %f #&& echo 'no key to continue...'; read -r dummy,
 
 
 set dotdirs=rootparent
