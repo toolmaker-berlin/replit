@@ -8,10 +8,12 @@ syntax on
 set backspace=indent,eol,start
 
 nnoremap Zz ZZ
+
 inoremap <c-a> <esc>0i
 inoremap <c-e> <esc>A
 inoremap <c-k> <esc>l<esc>d$<esc>A
 inoremap <c-u> <esc>dd<esc>i<cr><esc>ki
+
 inoremap ,, ,,
 inoremap Zz <esc>ZZ
 inoremap ZZ <esc>ZZ
@@ -41,7 +43,6 @@ vnoremap Ö {
 vnoremap Ä }
 vnoremap ü \
 vnoremap Ü \|
-
 
 " restore cursor position
 augroup restore_pos | au!

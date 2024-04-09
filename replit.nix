@@ -1,5 +1,6 @@
 { pkgs }: {
     deps = [
+      pkgs.lftp
       pkgs.xorg.setxkbmap
       pkgs.nano
       pkgs.wget

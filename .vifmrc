@@ -456,7 +456,7 @@ nnoremap # '
 nnoremap ## ''
 ""nnoremap c-L :redraw<cr>
 nnoremap xh :cd ~<cr>
-nnoremap Hh :cd ~<cr>
+nnoremap Hh :cd $WDIR<cr>
 nnoremap HH :cd ~<cr>
 nnoremap xg :cd ~/dev/github<cr>
 nnoremap Hg :cd ~/dev/github<cr>

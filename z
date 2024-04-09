@@ -1,62 +1,45 @@
 clear
 
-# .vim Verzeichnis erzeugen usw.
-if [ -L ~/.vim ]; then
-  clear
-  # Link usw war noch vorhanden
-else
-  if [ -d ~/.vim ]; then
-    # Verzeichnis zuvor löschen!
-    # rm -rf ~/.vim/
-    clear
-  fi
-
-  # Links neu angelegen
-  ln -s $(pwd)/.vim/ ~/.vim
-  ln -s $(pwd)/.vimrc ~/.vimrc
-  ln -s $(pwd)/.vifmrc ~/.vifmrc
-
+if [[ -z "$WDIR" ]]; then
+  export WDIR=$(pwd)
 fi
 
-# .julia Verzeichnis erzeugen usw.
-if [ -L ~/.julia ]; then
-  pwd
-  # Link usw war noch vorhanden
-else
-  if [ -d ~/.julia ]; then
-    # Verzeichnis zuvor löschen!
-    # rm -rf ~/.julia/
-    clear
-  fi
+# .vim Verzeichnis als Indikator
+if [ ! -L ~/.vim ]; then
 
-  # Link neu angelegen
-  ln -s $(pwd)/.julia/ ~/.julia
+  # Links neu angelegen usw.
+  ln -s $WDIR/.vim/ ~/.vim
+  ln -s $WDIR/.vimrc ~/.vimrc
+  ln -s $WDIR/.vifmrc ~/.vifmrc
+  ln -s $WDIR/.julia/ ~/.julia
+  cp -r $WDIR/.local/ /home/runner/
 
 fi
-
-cp -r $(pwd)/.local/ /home/runner/
 
 alias c="clear"
 alias x="vifm"
 alias ed="vim"
-alias edn="vim $(pwd)/.vimrc"
-alias edz="vim $(pwd)/z"
+alias edn="vim $WDIR/.vimrc"
+alias edz="vim $WDIR/z"
 alias ed="vim"
-alias rst="source z"
-alias m="julia mainmenue.jl"
-alias r="julia main.jl"
-alias e="vim main.jl"
+alias cc="cd $WDIR"
+alias rst="source $WDIR/z"
+alias m="julia $WDIR/mainmenue.jl"
+alias r="julia $WDIR/main.jl"
+alias e="vim $WDIR/mainmenue.jl"
 alias nvim="vim"
 alias jj="julia -q"
-alias la="ls -a1"
-alias ll="ls -al1"
+alias l="exa -1 --color=always --group-directories-first --sort name --no-user --git"
+alias jl="exa -1 --color=always --group-directories-first --sort name --no-user --git *jl"
+alias la="exa -a1 --color=always --group-directories-first --sort name --no-user --git"
+alias ll="exa -a1l --color=always --group-directories-first --sort name --no-user --git"
 alias qq="exit"
 
-export PS1='\W$ '
+export PS1='>>> \W$ '
 
 export MYVIFMRC=~/.vifmrc
 
-source $(pwd)/.zatuin
+source $WDIR/.zatuin
 
 bind '"\ö": "["'
 bind '"\ä": "]"'
@@ -64,5 +47,8 @@ bind '"\Ö": "{"'
 bind '"\Ä": "}"'
 bind '"\ü": "\\"'
 bind '"\Ü": "|"'
+bind '"\ß": "~"'
+
+
 
 

@@ -135,9 +135,9 @@ while true
 # print("\033c") # Funktioniert hier nicht
 global filesorted=listfiles()
 x=doit()
-if x==1 break;end
+if x==1 println();break;end
   str = Base.prompt("\n Nochmal [Y] / N ? ") in ("","y","Y") ? "Y" : "N"
-  if str =="N" break;end
+  if str =="N" println();break;end
 end
 
 

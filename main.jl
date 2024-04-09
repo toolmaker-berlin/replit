@@ -1,8 +1,9 @@
 # --------------------------
 # Nur 1xRun (main.jl) (DEMO)
 # REPLIT macht Fehler, 
+# (RUN/STOP/EDIT/RUN-ZYKLUS)
 # besser die SHELL benutzen!
-# 
+#            ===============
 # Stand 8. April 2024
 # --------------------------
 
@@ -15,4 +16,7 @@ end
 
 include("mainmenue.jl")
 
-exit(0)
+# exit(0) # KEIN EXIT
+# STOP/EDIT/RUN 
+# ODER SHELL BENUTZEN!
+
