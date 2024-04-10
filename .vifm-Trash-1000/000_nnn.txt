@@ -1,0 +1,12 @@
+function! ToggleZeroBehavior()
+if col('.') ==# 1
+    "call feedkeys("$")
+    call cursor(line('.'), col('$'))
+else
+    call cursor(line('.'), 1)
+endif
+endfunction
+
+nnoremap <silent> 0 <esc>:call ToggleZeroBehavior()<cr>
+
+nnoremap <silent> ll <c-w>w

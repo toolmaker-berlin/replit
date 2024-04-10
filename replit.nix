@@ -1,5 +1,6 @@
 { pkgs }: {
     deps = [
+      pkgs.glow
       pkgs.lftp
       pkgs.xorg.setxkbmap
       pkgs.nano
