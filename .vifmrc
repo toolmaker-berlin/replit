@@ -182,8 +182,11 @@ filetype {*.jl},<.>,
        \ {START Julia (REPL only)}
        \ clear && julia -iq %f
 
-" ipython
-" filetype {*.py},<.>,
+" ipython/python
+filetype {*.py},<.>,
+       \ {RUN Python (via Python buildin)}
+       \ clear && python %f && echo 'Press ENTER to continue ...'; read -r dummy
+
 "        \ {RUN IPython (via PyPy3)}
 "        \ clear && pypy3 -m IPython %f && echo 'Press ENTER to continue ...'; read -r dummy,
 "        \ {RUN IPython (PyPy3) interactiv}

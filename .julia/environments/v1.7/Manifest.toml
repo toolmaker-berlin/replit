@@ -29,6 +29,11 @@ git-tree-sha1 = "f1dff6729bc61f4d49e140da1af55dcd1ac97b2f"
 uuid = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 version = "1.5.0"
 
+[[deps.CarouselArrays]]
+git-tree-sha1 = "cbabce68aa47c80c646e86023c215b92d46b7661"
+uuid = "728b0f75-d1ac-44d2-96e7-73f1be4eca2f"
+version = "0.1.0"
+
 [[deps.CodeTracking]]
 deps = ["InteractiveUtils", "UUIDs"]
 git-tree-sha1 = "c0216e792f518b39b22212127d4a84dc31e4e386"

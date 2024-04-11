@@ -310,3 +310,30 @@
 # time: 2024-04-08 04:54:55 UTC
 # mode: pkg
 	st
+# time: 2024-04-10 18:24:25 UTC
+# mode: pkg
+	add CarouselArrays
+# time: 2024-04-10 18:24:51 UTC
+# mode: julia
+	using CarouselArrays
+# time: 2024-04-10 18:27:04 UTC
+# mode: julia
+	x=CarouselArray(1:10)
+# time: 2024-04-10 18:27:28 UTC
+# mode: julia
+	x[15]
+# time: 2024-04-10 18:28:05 UTC
+# mode: julia
+	x[-1]
+# time: 2024-04-10 18:29:22 UTC
+# mode: julia
+	x[11]
+# time: 2024-04-10 18:30:03 UTC
+# mode: julia
+	x[0]
+# time: 2024-04-11 11:45:41 UTC
+# mode: shell
+	ls
+# time: 2024-04-11 11:46:02 UTC
+# mode: julia
+	]

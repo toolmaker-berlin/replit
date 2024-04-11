@@ -7,6 +7,8 @@
 # Stand 8. April 2024
 # --------------------------
 
+println("Julia - so nicht!")
+
 try
   using Crayons
 catch
@@ -14,7 +16,7 @@ catch
   run(`sh -c $script`;wait=true)
 end
 
-include("mainmenue.jl")
+# include("test.jl")
 
 # exit(0) # KEIN EXIT
 # STOP/EDIT/RUN 
