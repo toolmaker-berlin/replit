@@ -220,7 +220,8 @@ filetype {*.md},<.>,
 " set fillchars=vborder:│
 
 " Filter-out build and temporary files
-" filter! {*.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
+filter! {*.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
+filter {*.nix,	*.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
 
 
 " ------------------------------------------------------------------------------
