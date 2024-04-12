@@ -171,6 +171,23 @@ filetype *.zip,*.jar,*.war,*.ear
 fileviewer *.zip,*.jar,*.war,*.ear zip -sf %c, echo "No zip to preview:"
 
 
+" Start-Varianten mit ! hinten am Namen "ohne warten" muessen zuerst definiert werden 
+" -----------------------------------------------------------------------------------
+
+filetype {*!.py},<.>,
+       \ {RUN Python ohne Stop}
+       \ clear && python %f 
+
+filetype {*!.jl},<.>,
+       \ {RUN Julia ohne Stop}
+       \ clear && julia -q %f 
+
+filetype {*.md},<.>,
+       \ {MD mit vim read only }
+       \ vim -M %c, 
+       \ {MD mit Glow }
+       \ glow -p -s light %c
+
 " julia
 filetype {*.jl},<.>,
        \ {RUN Julia}
@@ -182,9 +199,9 @@ filetype {*.jl},<.>,
        \ {START Julia (REPL only)}
        \ clear && julia -iq %f
 
-" ipython/python
+" ipython/python (Replit/iMac24)
 filetype {*.py},<.>,
-       \ {RUN Python (via Python buildin)}
+       \ {RUN Python}
        \ clear && python %f && echo 'Press ENTER to continue ...'; read -r dummy
 
 "        \ {RUN IPython (via PyPy3)}
@@ -194,19 +211,9 @@ filetype {*.py},<.>,
 "        \ {START IPython (PyPy3) REPL only}
 "        \ clear && pypy3 -m IPython #
 
-" filetype {*.pyexe},<.>,
+" filetype {*!.py},<.>,
 "        \ {RUN IPython ohne Stop (via PyPy3)}
 "        \ clear && pypy3 -m IPython %f # && echo 'Test (continue...)'; read -r dummy,
-
-filetype {*.jlexe},<.>,
-       \ {RUN Julia ohne Stop}
-       \ clear && julia -q %f # && echo 'no key to continue...'; read -r dummy,
-
-filetype {*.md},<.>,
-       \ {MD mit vim read only }
-       \ vim -M %c, 
-       \ {MD mit Glow }
-       \ glow -p -s light %c
 
 
 " ------------------------------------------------------------------------------
