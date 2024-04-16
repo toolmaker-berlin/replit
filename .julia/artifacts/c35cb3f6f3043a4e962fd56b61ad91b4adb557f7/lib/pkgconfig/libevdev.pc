@@ -1,0 +1,10 @@
+prefix=/workspace/destdir
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libevdev
+Description: Handler library for evdev events
+Version: 1.11.0
+Libs: -L${libdir} -levdev
+Libs.private: -lrt
+Cflags: -I${includedir}/libevdev-1.0

@@ -4,6 +4,19 @@
 
 print("\033c") # Funktioniert nicht überall
 
+bekannt=Dict("_mainmenue!.jl" => "Menue/Filesystem",
+"display_ctrl.jl"    => "Pos & Farben",
+"fib.jl"             => "Fibonacci",
+"input_readline.jl"  => "einfachster Input",
+"juliabench.jl"      => "Threads Speed",
+"latex_julia.jl"     => "π,∈ Beispiel",
+"offsetarraytest.jl" => "0-n Array vgl.",
+"readme.jl"          => "Diese Liste",
+"string_like_py.jl"  => "Operator overload",
+"termsize.jl"        => "Zeile/Spalte",
+"term.py"            => "Zeile/Spalte Pyton",
+"speed.py"           => "Pyton Test")
+
 # println(pwd()) # test wo sind wir
 # cd("demo")
 
@@ -31,7 +44,7 @@ function listfiles()
 	xdir=readdir()
   fileliste=Vector{String}()
   dateliste=Vector{String}()
-	for na in xdir
+  for na in xdir
 		if (endswith(na,".jl") || endswith(na,".py")) && !startswith(na,"_")
       x=Dates.unix2datetime(mtime(na)) 
 			y=(string(x)*" "*na)
@@ -59,8 +72,32 @@ using REPL.TerminalMenus
 
 while true
   print("\033c")
+  
+  optionsmit=Vector{String}()
+
   global options=listfiles()
-  menu = RadioMenu(options, scroll_wrap=true, pagesize=15, charset=:unicode)
+  for op in options
+    if get(bekannt, op, "???") != "???"
+      push!(optionsmit,(op*" "^30)[1:20]*" -> "*get(bekannt, op, "???"))
+    else 
+      push!(optionsmit,(op*" "^30)[1:20]*" -> "*"?")
+    end
+  end
+
+  lines=displaysize(stdout)[1]-5
+  if lines < 5
+    lines=5
+  end
+  columes=displaysize(stdout)[2]
+  if columes < 60
+    replace!(opx -> replace(opx, "!.jl"  => " "), optionsmit)
+    replace!(opx -> replace(opx, "!.py"  => " "), optionsmit)
+    replace!(opx -> replace(opx, ".jl"   => ""), optionsmit)
+    replace!(opx -> replace(opx, ".py"   => ""), optionsmit)
+    replace!(opx -> replace(opx, " -> "  => ""), optionsmit)
+  end
+  
+  menu = RadioMenu(optionsmit, scroll_wrap=true, pagesize=lines, charset=:unicode)
   choice = request("Auswahl Datei mit CR oder Q=Quit", menu)
 
   if choice != -1 

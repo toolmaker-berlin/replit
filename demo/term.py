@@ -1,3 +1,5 @@
+print("\033c"+"... Bitte Fenstergröße verändern!\n")
+
 import os
 import signal
 

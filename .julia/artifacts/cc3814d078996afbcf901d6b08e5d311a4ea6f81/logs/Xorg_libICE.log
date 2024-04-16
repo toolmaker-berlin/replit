@@ -1,0 +1,579 @@
+BinaryBuilder.jl version: 0.2.4-tree-585c625152
+
+`/bin/bash -l -c 'set -x
+cc --version
+c++ --version
+gcc --version
+g++ --version
+clang --version
+clang++ --version
+objc --version
+f77 --version
+gfortran --version
+ld -v
+'`
+x86_64-linux-gnu-gcc (GCC) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+x86_64-linux-gnu-g++ (GCC) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+x86_64-linux-gnu-gcc (GCC) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+verbose sandbox enabled (running in privileged container mode)
+Parsed --rootfs as "/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b"
+Parsed --cd as "/workspace/srcdir"
+Parsed --workspace as "/agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU" -> "/workspace"
+Parsed --workspace as "/agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU/metadir" -> "/meta"
+Parsed --workspace as "/tmp/jl_QN6NLY" -> "/opt/bin"
+Parsed --workspace as "/depot/ccache" -> "/root/.ccache"
+Parsed --map as "/depot/artifacts/b38aa971fdf60ce04b3a0c7c715f78268a7e3a7e" -> "/opt/x86_64-linux-gnu/PlatformSupport-2020.2.7"
+Parsed --map as "/depot/artifacts/f2124900465e4fa506f8b1e274074eb92d68d46b" -> "/opt/x86_64-linux-gnu/GCCBootstrap-4.8.5"
+Parsed --map as "/depot/artifacts/35dc5ddb1b3037f449fee5771b6c12ebcc4350b8" -> "/opt/x86_64-linux-musl/LLVMBootstrap-9.0.1"
+Parsed --map as "/depot/artifacts/1a9bb425a2d8d6e56e4b68078e9d74e228daad18" -> "/opt/x86_64-linux-musl/PlatformSupport-2020.2.7"
+Parsed --map as "/depot/artifacts/2e6f62648ec0497cc25774aa175471ad41b6172a" -> "/opt/x86_64-linux-musl/GCCBootstrap-4.8.5"
+--> Creating overlay workdir at /proc
+--> Mounting overlay of /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b (modifications in /proc/upper/rootfs, workspace in /proc/work/rootfs)
+--> mapping /depot/artifacts/2e6f62648ec0497cc25774aa175471ad41b6172a to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/GCCBootstrap-4.8.5
+--> mapping /depot/artifacts/1a9bb425a2d8d6e56e4b68078e9d74e228daad18 to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/PlatformSupport-2020.2.7
+--> mapping /depot/artifacts/35dc5ddb1b3037f449fee5771b6c12ebcc4350b8 to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/LLVMBootstrap-9.0.1
+--> mapping /depot/artifacts/f2124900465e4fa506f8b1e274074eb92d68d46b to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/GCCBootstrap-4.8.5
+--> mapping /depot/artifacts/b38aa971fdf60ce04b3a0c7c715f78268a7e3a7e to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/PlatformSupport-2020.2.7
+--> Mounting overlay of /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/PlatformSupport-2020.2.7:/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/GCCBootstrap-4.8.5 at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu (modifications in /proc/upper/x86_64-linux-gnu, workspace in /proc/work/x86_64-linux-gnu)
+--> Mounting overlay of /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/LLVMBootstrap-9.0.1:/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/PlatformSupport-2020.2.7:/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/GCCBootstrap-4.8.5 at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl (modifications in /proc/upper/x86_64-linux-musl, workspace in /proc/work/x86_64-linux-musl)
+--> Mounting procfs at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/proc
+--> Mounting /dev/null at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/dev/null
+--> Mounting /dev/tty at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/dev/tty
+--> Mounting /dev/urandom at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/dev/urandom
+--> workspacing /depot/ccache to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/root/.ccache
+--> workspacing /tmp/jl_QN6NLY to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/bin
+--> workspacing /agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU/metadir to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/meta
+--> workspacing /agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/workspace
+--> Mounting procfs at /proc
+Child Process PID is 25810
+--> Mapping 0:0 to root:root within container namespace
+--> Mounting procfs at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/proc
+About to run `/bin/bash` `-l` `-c` `set -x
+cc --version
+c++ --version
+gcc --version
+g++ --version
+clang --version
+clang++ --version
+objc --version
+f77 --version
+gfortran --version
+ld -v
+` 
++ cc --version
++ c++ --version
++ gcc --version
++ g++ --version
+x86_64-linux-gnu-g++ (GCC) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
++ clang --version
+clang version 9.0.1 (/home/staticfloat/.julia/dev/BinaryBuilder/deps/downloads/llvm-project.git c1a0a213378a458fbea1a5c77b315c7dce08fd05)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ clang++ --version
+clang version 9.0.1 (/home/staticfloat/.julia/dev/BinaryBuilder/deps/downloads/llvm-project.git c1a0a213378a458fbea1a5c77b315c7dce08fd05)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ objc --version
+clang version 9.0.1 (/home/staticfloat/.julia/dev/BinaryBuilder/deps/downloads/llvm-project.git c1a0a213378a458fbea1a5c77b315c7dce08fd05)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/x86_64-linux-musl/bin
++ f77 --version
+GNU Fortran (GCC) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
++ gfortran --version
+GNU Fortran (GCC) 4.8.5
+Copyright (C) 2015 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
++ ld -v
+GNU ld (GNU Binutils) 2.24
+Child Process exited, exit code 0
+`/bin/bash -l -c "# Stop if we hit any errors.
+set -e
+
+# If we're running as \`bash\`, then use the \`DEBUG\` and \`ERR\` traps
+if [ \$(basename \$0) = \"bash\" ]; then
+    trap \"trap - DEBUG INT TERM ERR EXIT; \
+          set +e +x; \
+          auto_install_license; \
+          save_env\" \
+        EXIT
+
+    trap \"RET=\\$?; \
+          trap - DEBUG INT TERM ERR EXIT; \
+          set +e +x; \
+          echo Previous command \\$! exited with \\$RET >&2; \
+          save_env; \
+          exit \\$RET\" \
+        INT TERM ERR
+
+    # Start saving everything into our history
+    trap save_history DEBUG
+else
+    # If we're running in \`sh\` or something like that, we need a
+    # slightly slimmer set of traps. :(
+    trap \"RET=\\$?; \
+          echo Previous command exited with \\$RET >&2; \
+          set +e +x; \
+          save_env; \
+          exit \\$RET\" \
+        EXIT INT TERM
+fi
+
+cd \$WORKSPACE/srcdir/libICE-*/
+CPPFLAGS=\"-I\${prefix}/include\"
+# When compiling for things like ppc64le, we need newer \`config.sub\` files
+update_configure_scripts
+./configure --prefix=\${prefix} --host=\${target} --enable-malloc0returnsnull=no
+make -j\${nproc}
+make install
+
+"`
+Searching for config.guess files to replace...
+verbose sandbox enabled (running in privileged container mode)
+Parsed --rootfs as "/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b"
+Parsed --cd as "/workspace/srcdir"
+Parsed --workspace as "/agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU" -> "/workspace"
+Parsed --workspace as "/agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU/metadir" -> "/meta"
+Parsed --workspace as "/tmp/jl_QN6NLY" -> "/opt/bin"
+Parsed --workspace as "/depot/ccache" -> "/root/.ccache"
+Parsed --map as "/depot/artifacts/b38aa971fdf60ce04b3a0c7c715f78268a7e3a7e" -> "/opt/x86_64-linux-gnu/PlatformSupport-2020.2.7"
+Parsed --map as "/depot/artifacts/f2124900465e4fa506f8b1e274074eb92d68d46b" -> "/opt/x86_64-linux-gnu/GCCBootstrap-4.8.5"
+Parsed --map as "/depot/artifacts/35dc5ddb1b3037f449fee5771b6c12ebcc4350b8" -> "/opt/x86_64-linux-musl/LLVMBootstrap-9.0.1"
+Parsed --map as "/depot/artifacts/1a9bb425a2d8d6e56e4b68078e9d74e228daad18" -> "/opt/x86_64-linux-musl/PlatformSupport-2020.2.7"
+Parsed --map as "/depot/artifacts/2e6f62648ec0497cc25774aa175471ad41b6172a" -> "/opt/x86_64-linux-musl/GCCBootstrap-4.8.5"
+--> Creating overlay workdir at /proc
+--> Mounting overlay of /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b (modifications in /proc/upper/rootfs, workspace in /proc/work/rootfs)
+--> mapping /depot/artifacts/2e6f62648ec0497cc25774aa175471ad41b6172a to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/GCCBootstrap-4.8.5
+--> mapping /depot/artifacts/1a9bb425a2d8d6e56e4b68078e9d74e228daad18 to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/PlatformSupport-2020.2.7
+--> mapping /depot/artifacts/35dc5ddb1b3037f449fee5771b6c12ebcc4350b8 to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/LLVMBootstrap-9.0.1
+--> mapping /depot/artifacts/f2124900465e4fa506f8b1e274074eb92d68d46b to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/GCCBootstrap-4.8.5
+--> mapping /depot/artifacts/b38aa971fdf60ce04b3a0c7c715f78268a7e3a7e to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/PlatformSupport-2020.2.7
+--> Mounting overlay of /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/PlatformSupport-2020.2.7:/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu/GCCBootstrap-4.8.5 at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-gnu (modifications in /proc/upper/x86_64-linux-gnu, workspace in /proc/work/x86_64-linux-gnu)
+--> Mounting overlay of /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/LLVMBootstrap-9.0.1:/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/PlatformSupport-2020.2.7:/depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl/GCCBootstrap-4.8.5 at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/x86_64-linux-musl (modifications in /proc/upper/x86_64-linux-musl, workspace in /proc/work/x86_64-linux-musl)
+--> Mounting procfs at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/proc
+--> Mounting /dev/null at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/dev/null
+--> Mounting /dev/tty at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/dev/tty
+--> Mounting /dev/urandom at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/dev/urandom
+--> workspacing /depot/ccache to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/root/.ccache
+--> workspacing /tmp/jl_QN6NLY to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/opt/bin
+--> workspacing /agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU/metadir to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/meta
+--> workspacing /agent/_work/1/s/X/Xorg_libICE/build/x86_64-linux-gnu/Ulwa9KBU to /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/workspace
+--> Mounting procfs at /proc
+Child Process PID is 25870
+--> Mapping 0:0 to root:root within container namespace
+--> Mounting procfs at /depot/artifacts/1f1eff795e9e8a2f8a3929de9f902123749a9b6b/proc
+About to run `/bin/bash` `-l` `-c` `# Stop if we hit any errors.
+set -e
+
+# If we're running as `bash`, then use the `DEBUG` and `ERR` traps
+if [ $(basename $0) = "bash" ]; then
+    trap "trap - DEBUG INT TERM ERR EXIT; \
+          set +e +x; \
+          auto_install_license; \
+          save_env" \
+        EXIT
+
+    trap "RET=\$?; \
+          trap - DEBUG INT TERM ERR EXIT; \
+          set +e +x; \
+          echo Previous command \$! exited with \$RET >&2; \
+          save_env; \
+          exit \$RET" \
+        INT TERM ERR
+
+    # Start saving everything into our history
+    trap save_history DEBUG
+else
+    # If we're running in `sh` or something like that, we need a
+    # slightly slimmer set of traps. :(
+    trap "RET=\$?; \
+          echo Previous command exited with \$RET >&2; \
+          set +e +x; \
+          save_env; \
+          exit \$RET" \
+        EXIT INT TERM
+fi
+
+cd $WORKSPACE/srcdir/libICE-*/
+CPPFLAGS="-I${prefix}/include"
+# When compiling for things like ppc64le, we need newer `config.sub` files
+update_configure_scripts
+./configure --prefix=${prefix} --host=${target} --enable-malloc0returnsnull=no
+make -j${nproc}
+make install
+
+` 
+ ---> cd $WORKSPACE/srcdir/libICE-*/
+ ---> CPPFLAGS="-I${prefix}/include"
+ ---> update_configure_scripts
+'/usr/local/share/configure_scripts/config.guess' -> './config.guess'
+Searching for config.sub files to replace...
+'/usr/local/share/configure_scripts/config.sub' -> './config.sub'
+ ---> ./configure --prefix=${prefix} --host=${target} --enable-malloc0returnsnull=no
+configure: WARNING: unrecognized options: --enable-malloc0returnsnull
+checking for x86_64-linux-gnu-gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking whether cc understands -c and -o together... yes
+checking how to run the C preprocessor... cc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking whether make supports nested variables... yes
+checking dependency style of cc... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by cc... /opt/x86_64-linux-gnu/x86_64-linux-gnu/bin/ld
+checking if the linker (/opt/x86_64-linux-gnu/x86_64-linux-gnu/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /opt/bin/x86_64-linux-gnu-nm -B
+checking the name lister (/opt/bin/x86_64-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 98304
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /opt/x86_64-linux-gnu/x86_64-linux-gnu/bin/ld option to reload object files... -r
+checking for x86_64-linux-gnu-objdump... x86_64-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-linux-gnu-ar... x86_64-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-linux-gnu-strip... x86_64-linux-gnu-strip
+checking for x86_64-linux-gnu-ranlib... x86_64-linux-gnu-ranlib
+checking command to parse /opt/bin/x86_64-linux-gnu-nm -B output from cc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if cc supports -fno-rtti -fno-exceptions... no
+checking for cc option to produce PIC... -fPIC -DPIC
+checking if cc PIC flag -fPIC -DPIC works... yes
+checking if cc static flag -static works... yes
+checking if cc supports -c -o file.o... yes
+checking if cc supports -c -o file.o... (cached) yes
+checking whether the cc linker (/opt/x86_64-linux-gnu/x86_64-linux-gnu/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for cc option to accept ISO C99... -std=gnu99
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for x86_64-linux-gnu-pkg-config... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if cc -std=gnu99 supports -Werror=unknown-warning-option... no
+checking if cc -std=gnu99 supports -Werror=unused-command-line-argument... no
+checking if cc -std=gnu99 supports -Wall... yes
+checking if cc -std=gnu99 supports -Wpointer-arith... yes
+checking if cc -std=gnu99 supports -Wmissing-declarations... yes
+checking if cc -std=gnu99 supports -Wformat=2... yes
+checking if cc -std=gnu99 supports -Wstrict-prototypes... yes
+checking if cc -std=gnu99 supports -Wmissing-prototypes... yes
+checking if cc -std=gnu99 supports -Wnested-externs... yes
+checking if cc -std=gnu99 supports -Wbad-function-cast... yes
+checking if cc -std=gnu99 supports -Wold-style-definition... yes
+checking if cc -std=gnu99 supports -Wdeclaration-after-statement... yes
+checking if cc -std=gnu99 supports -Wunused... yes
+checking if cc -std=gnu99 supports -Wuninitialized... yes
+checking if cc -std=gnu99 supports -Wshadow... yes
+checking if cc -std=gnu99 supports -Wmissing-noreturn... yes
+checking if cc -std=gnu99 supports -Wmissing-format-attribute... yes
+checking if cc -std=gnu99 supports -Wredundant-decls... yes
+checking if cc -std=gnu99 supports -Wlogical-op... yes
+checking if cc -std=gnu99 supports -Werror=implicit... yes
+checking if cc -std=gnu99 supports -Werror=nonnull... yes
+checking if cc -std=gnu99 supports -Werror=init-self... yes
+checking if cc -std=gnu99 supports -Werror=main... yes
+checking if cc -std=gnu99 supports -Werror=missing-braces... yes
+checking if cc -std=gnu99 supports -Werror=sequence-point... yes
+checking if cc -std=gnu99 supports -Werror=return-type... yes
+checking if cc -std=gnu99 supports -Werror=trigraphs... yes
+checking if cc -std=gnu99 supports -Werror=array-bounds... yes
+checking if cc -std=gnu99 supports -Werror=write-strings... yes
+checking if cc -std=gnu99 supports -Werror=address... yes
+checking if cc -std=gnu99 supports -Werror=int-to-pointer-cast... yes
+checking if cc -std=gnu99 supports -Werror=pointer-to-int-cast... yes
+checking if cc -std=gnu99 supports -pedantic... yes
+checking if cc -std=gnu99 supports -Werror... yes
+checking if cc -std=gnu99 supports -Werror=attributes... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to build documentation... yes
+checking whether to build functional specifications... yes
+checking for xmlto... no
+configure: WARNING: xmlto not found - documentation targets will be skipped
+checking for fop... no
+configure: WARNING: fop not found - documentation targets will be skipped
+checking for xsltproc... no
+configure: WARNING: xsltproc not found - cannot transform XML documents
+checking for X.Org SGML entities >= 1.8... no
+checking for ICE... yes
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking for struct msghdr.msg_control... yes
+checking if Xtrans should support os-specific local connections... no
+checking for arc4random_buf in -lbsd... no
+checking for asprintf... yes
+checking for arc4random_buf... no
+checking for getentropy... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating specs/Makefile
+config.status: creating src/Makefile
+config.status: creating ice.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --enable-malloc0returnsnull
+ ---> make -j${nproc}
+make  all-recursive
+make[1]: Entering directory '/workspace/srcdir/libICE-1.0.10'
+Making all in doc
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10/doc'
+Making all in specs
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10/specs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10/specs'
+Making all in src
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT accept.lo -MD -MP -MF .deps/accept.Tpo -c -o accept.lo accept.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT authutil.lo -MD -MP -MF .deps/authutil.Tpo -c -o authutil.lo authutil.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT connect.lo -MD -MP -MF .deps/connect.Tpo -c -o connect.lo connect.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT error.lo -MD -MP -MF .deps/error.Tpo -c -o error.lo error.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT getauth.lo -MD -MP -MF .deps/getauth.Tpo -c -o getauth.lo getauth.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT iceauth.lo -MD -MP -MF .deps/iceauth.Tpo -c -o iceauth.lo iceauth.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT icetrans.lo -MD -MP -MF .deps/icetrans.Tpo -c -o icetrans.lo icetrans.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT listen.lo -MD -MP -MF .deps/listen.Tpo -c -o listen.lo listen.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT listenwk.lo -MD -MP -MF .deps/listenwk.Tpo -c -o listenwk.lo listenwk.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT locking.lo -MD -MP -MF .deps/locking.Tpo -c -o locking.lo locking.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT misc.lo -MD -MP -MF .deps/misc.Tpo -c -o misc.lo misc.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT ping.lo -MD -MP -MF .deps/ping.Tpo -c -o ping.lo ping.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT process.lo -MD -MP -MF .deps/process.Tpo -c -o process.lo process.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT protosetup.lo -MD -MP -MF .deps/protosetup.Tpo -c -o protosetup.lo protosetup.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT register.lo -MD -MP -MF .deps/register.Tpo -c -o register.lo register.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT replywait.lo -MD -MP -MF .deps/replywait.Tpo -c -o replywait.lo replywait.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT setauth.lo -MD -MP -MF .deps/setauth.Tpo -c -o setauth.lo setauth.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT shutdown.lo -MD -MP -MF .deps/shutdown.Tpo -c -o shutdown.lo shutdown.c
+/bin/sh ../libtool  --tag=CC   --mode=compile cc -std=gnu99 -DHAVE_CONFIG_H -I. -I..  -I../include  -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT watch.lo -MD -MP -MF .deps/watch.Tpo -c -o watch.lo watch.c
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT accept.lo -MD -MP -MF .deps/accept.Tpo -c accept.c  -fPIC -DPIC -o .libs/accept.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT authutil.lo -MD -MP -MF .deps/authutil.Tpo -c authutil.c  -fPIC -DPIC -o .libs/authutil.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT iceauth.lo -MD -MP -MF .deps/iceauth.Tpo -c iceauth.c  -fPIC -DPIC -o .libs/iceauth.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT register.lo -MD -MP -MF .deps/register.Tpo -c register.c  -fPIC -DPIC -o .libs/register.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT listenwk.lo -MD -MP -MF .deps/listenwk.Tpo -c listenwk.c  -fPIC -DPIC -o .libs/listenwk.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT watch.lo -MD -MP -MF .deps/watch.Tpo -c watch.c  -fPIC -DPIC -o .libs/watch.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c  -fPIC -DPIC -o .libs/error.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT shutdown.lo -MD -MP -MF .deps/shutdown.Tpo -c shutdown.c  -fPIC -DPIC -o .libs/shutdown.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT replywait.lo -MD -MP -MF .deps/replywait.Tpo -c replywait.c  -fPIC -DPIC -o .libs/replywait.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT connect.lo -MD -MP -MF .deps/connect.Tpo -c connect.c  -fPIC -DPIC -o .libs/connect.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT listen.lo -MD -MP -MF .deps/listen.Tpo -c listen.c  -fPIC -DPIC -o .libs/listen.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT locking.lo -MD -MP -MF .deps/locking.Tpo -c locking.c  -fPIC -DPIC -o .libs/locking.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT getauth.lo -MD -MP -MF .deps/getauth.Tpo -c getauth.c  -fPIC -DPIC -o .libs/getauth.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT process.lo -MD -MP -MF .deps/process.Tpo -c process.c  -fPIC -DPIC -o .libs/process.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT icetrans.lo -MD -MP -MF .deps/icetrans.Tpo -c icetrans.c  -fPIC -DPIC -o .libs/icetrans.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT misc.lo -MD -MP -MF .deps/misc.Tpo -c misc.c  -fPIC -DPIC -o .libs/misc.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT ping.lo -MD -MP -MF .deps/ping.Tpo -c ping.c  -fPIC -DPIC -o .libs/ping.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT protosetup.lo -MD -MP -MF .deps/protosetup.Tpo -c protosetup.c  -fPIC -DPIC -o .libs/protosetup.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT setauth.lo -MD -MP -MF .deps/setauth.Tpo -c setauth.c  -fPIC -DPIC -o .libs/setauth.o
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT iceauth.lo -MD -MP -MF .deps/iceauth.Tpo -c iceauth.c -o iceauth.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT replywait.lo -MD -MP -MF .deps/replywait.Tpo -c replywait.c -o replywait.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT accept.lo -MD -MP -MF .deps/accept.Tpo -c accept.c -o accept.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT locking.lo -MD -MP -MF .deps/locking.Tpo -c locking.c -o locking.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT register.lo -MD -MP -MF .deps/register.Tpo -c register.c -o register.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT listenwk.lo -MD -MP -MF .deps/listenwk.Tpo -c listenwk.c -o listenwk.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT ping.lo -MD -MP -MF .deps/ping.Tpo -c ping.c -o ping.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT watch.lo -MD -MP -MF .deps/watch.Tpo -c watch.c -o watch.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT setauth.lo -MD -MP -MF .deps/setauth.Tpo -c setauth.c -o setauth.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT shutdown.lo -MD -MP -MF .deps/shutdown.Tpo -c shutdown.c -o shutdown.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT listen.lo -MD -MP -MF .deps/listen.Tpo -c listen.c -o listen.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT getauth.lo -MD -MP -MF .deps/getauth.Tpo -c getauth.c -o getauth.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT protosetup.lo -MD -MP -MF .deps/protosetup.Tpo -c protosetup.c -o protosetup.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT authutil.lo -MD -MP -MF .deps/authutil.Tpo -c authutil.c -o authutil.o >/dev/null 2>&1
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT misc.lo -MD -MP -MF .deps/misc.Tpo -c misc.c -o misc.o >/dev/null 2>&1
+mv -f .deps/accept.Tpo .deps/accept.Plo
+mv -f .deps/replywait.Tpo .deps/replywait.Plo
+mv -f .deps/ping.Tpo .deps/ping.Plo
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c -o error.o >/dev/null 2>&1
+mv -f .deps/iceauth.Tpo .deps/iceauth.Plo
+mv -f .deps/locking.Tpo .deps/locking.Plo
+mv -f .deps/setauth.Tpo .deps/setauth.Plo
+mv -f .deps/watch.Tpo .deps/watch.Plo
+connect.c: In function ‘IceOpenConnection’:
+connect.c:107:11: warning: declaration of ‘iceConn’ shadows a previous local [-Wshadow]
+   IceConn iceConn = _IceConnectionObjs[i];
+           ^
+connect.c:50:15: warning: shadowed declaration is here [-Wshadow]
+     IceConn   iceConn;
+               ^
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT connect.lo -MD -MP -MF .deps/connect.Tpo -c connect.c -o connect.o >/dev/null 2>&1
+mv -f .deps/listenwk.Tpo .deps/listenwk.Plo
+mv -f .deps/register.Tpo .deps/register.Plo
+mv -f .deps/shutdown.Tpo .deps/shutdown.Plo
+mv -f .deps/getauth.Tpo .deps/getauth.Plo
+mv -f .deps/listen.Tpo .deps/listen.Plo
+mv -f .deps/protosetup.Tpo .deps/protosetup.Plo
+mv -f .deps/misc.Tpo .deps/misc.Plo
+mv -f .deps/authutil.Tpo .deps/authutil.Plo
+mv -f .deps/connect.Tpo .deps/connect.Plo
+mv -f .deps/error.Tpo .deps/error.Plo
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT icetrans.lo -MD -MP -MF .deps/icetrans.Tpo -c icetrans.c -o icetrans.o >/dev/null 2>&1
+process.c: In function ‘ProcessAuthReply’:
+process.c:1478:13: warning: declaration of ‘status’ shadows a previous local [-Wshadow]
+      Status status = 1;
+             ^
+process.c:1426:18: warning: shadowed declaration is here [-Wshadow]
+  IcePaAuthStatus status =
+                  ^
+libtool: compile:  cc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -I../include -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -MT process.lo -MD -MP -MF .deps/process.Tpo -c process.c -o process.o >/dev/null 2>&1
+mv -f .deps/icetrans.Tpo .deps/icetrans.Plo
+mv -f .deps/process.Tpo .deps/process.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link cc -std=gnu99 -I/workspace/destdir/include -D_DEFAULT_SOURCE -D_BSD_SOURCE -DHAS_FCHOWN -DHAS_STICKY_DIR_BIT  -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -g -O2 -version-number 6:3:0 -no-undefined  -o libICE.la -rpath /workspace/destdir/lib accept.lo authutil.lo connect.lo error.lo getauth.lo iceauth.lo icetrans.lo listen.lo listenwk.lo locking.lo misc.lo ping.lo process.lo protosetup.lo register.lo replywait.lo setauth.lo shutdown.lo watch.lo  
+libtool: link: cc -shared  -fPIC -DPIC  .libs/accept.o .libs/authutil.o .libs/connect.o .libs/error.o .libs/getauth.o .libs/iceauth.o .libs/icetrans.o .libs/listen.o .libs/listenwk.o .libs/locking.o .libs/misc.o .libs/ping.o .libs/process.o .libs/protosetup.o .libs/register.o .libs/replywait.o .libs/setauth.o .libs/shutdown.o .libs/watch.o    -g -O2   -Wl,-soname -Wl,libICE.so.6 -o .libs/libICE.so.6.3.0
+libtool: link: (cd ".libs" && rm -f "libICE.so.6" && ln -s "libICE.so.6.3.0" "libICE.so.6")
+libtool: link: (cd ".libs" && rm -f "libICE.so" && ln -s "libICE.so.6.3.0" "libICE.so")
+libtool: link: x86_64-linux-gnu-ar cru .libs/libICE.a  accept.o authutil.o connect.o error.o getauth.o iceauth.o icetrans.o listen.o listenwk.o locking.o misc.o ping.o process.o protosetup.o register.o replywait.o setauth.o shutdown.o watch.o
+libtool: link: x86_64-linux-gnu-ranlib .libs/libICE.a
+libtool: link: ( cd ".libs" && rm -f "libICE.la" && ln -s "../libICE.la" "libICE.la" )
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10/src'
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10'
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10'
+make[1]: Leaving directory '/workspace/srcdir/libICE-1.0.10'
+ ---> make install
+Making install in doc
+make[1]: Entering directory '/workspace/srcdir/libICE-1.0.10/doc'
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ .././install-sh -c -d '/workspace/destdir/share/doc/libICE'
+ /usr/bin/install -c -m 644 ICElib.xml '/workspace/destdir/share/doc/libICE'
+ .././install-sh -c -d '/workspace/destdir/share/doc/libICE'
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10/doc'
+make[1]: Leaving directory '/workspace/srcdir/libICE-1.0.10/doc'
+Making install in specs
+make[1]: Entering directory '/workspace/srcdir/libICE-1.0.10/specs'
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10/specs'
+make[2]: Nothing to be done for 'install-exec-am'.
+ .././install-sh -c -d '/workspace/destdir/share/doc/libICE'
+ /usr/bin/install -c -m 644 ice.xml '/workspace/destdir/share/doc/libICE'
+ .././install-sh -c -d '/workspace/destdir/share/doc/libICE'
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10/specs'
+make[1]: Leaving directory '/workspace/srcdir/libICE-1.0.10/specs'
+Making install in src
+make[1]: Entering directory '/workspace/srcdir/libICE-1.0.10/src'
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10/src'
+ .././install-sh -c -d '/workspace/destdir/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libICE.la '/workspace/destdir/lib'
+libtool: install: /usr/bin/install -c .libs/libICE.so.6.3.0 /workspace/destdir/lib/libICE.so.6.3.0
+libtool: install: (cd /workspace/destdir/lib && { ln -s -f libICE.so.6.3.0 libICE.so.6 || { rm -f libICE.so.6 && ln -s libICE.so.6.3.0 libICE.so.6; }; })
+libtool: install: (cd /workspace/destdir/lib && { ln -s -f libICE.so.6.3.0 libICE.so || { rm -f libICE.so && ln -s libICE.so.6.3.0 libICE.so; }; })
+libtool: install: /usr/bin/install -c .libs/libICE.lai /workspace/destdir/lib/libICE.la
+libtool: install: /usr/bin/install -c .libs/libICE.a /workspace/destdir/lib/libICE.a
+libtool: install: chmod 644 /workspace/destdir/lib/libICE.a
+libtool: install: x86_64-linux-gnu-ranlib /workspace/destdir/lib/libICE.a
+libtool: finish: PATH="/opt/bin:/opt/x86_64-linux-gnu/bin:/opt/x86_64-linux-musl/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/workspace/destdir/bin:/sbin" ldconfig -n /workspace/destdir/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /workspace/destdir/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ .././install-sh -c -d '/workspace/destdir/include/X11/ICE'
+ /usr/bin/install -c -m 644 ../include/X11/ICE/ICE.h ../include/X11/ICE/ICEconn.h ../include/X11/ICE/ICElib.h ../include/X11/ICE/ICEmsg.h ../include/X11/ICE/ICEproto.h ../include/X11/ICE/ICEutil.h '/workspace/destdir/include/X11/ICE'
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10/src'
+make[1]: Leaving directory '/workspace/srcdir/libICE-1.0.10/src'
+make[1]: Entering directory '/workspace/srcdir/libICE-1.0.10'
+make[2]: Entering directory '/workspace/srcdir/libICE-1.0.10'
+make[2]: Nothing to be done for 'install-exec-am'.
+ ./install-sh -c -d '/workspace/destdir/lib/pkgconfig'
+ /usr/bin/install -c -m 644 ice.pc '/workspace/destdir/lib/pkgconfig'
+make[2]: Leaving directory '/workspace/srcdir/libICE-1.0.10'
+make[1]: Leaving directory '/workspace/srcdir/libICE-1.0.10'
+ ---> source "$_script"
+Installing license file "/workspace/srcdir/libICE-1.0.10/COPYING" to "/workspace/destdir/share/licenses/Xorg_libICE/COPYING"...
+Child Process exited, exit code 0

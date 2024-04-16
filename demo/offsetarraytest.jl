@@ -1,3 +1,5 @@
+print("\033c") # cls
+
 using OffsetArrays
 using CarouselArrays
 println("Offset Arrays testen!\n")

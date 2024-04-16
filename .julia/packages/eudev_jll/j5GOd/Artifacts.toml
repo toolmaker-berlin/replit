@@ -1,0 +1,83 @@
+[[eudev]]
+arch = "aarch64"
+git-tree-sha1 = "1546fe3590a2bcc685e07e9d266526d4d227218a"
+libc = "glibc"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "8af4a1483776504652100aeaf06a73e9d76d1c6bd95c16f9f417151fffe83296"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.aarch64-linux-gnu.tar.gz"
+[[eudev]]
+arch = "aarch64"
+git-tree-sha1 = "34ac95c8494e9d29f3e58181c470250cab361ed6"
+libc = "musl"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "1160236ce69934a26e446fc6efc633ae327e52721506d437f6d44831d0bb935c"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.aarch64-linux-musl.tar.gz"
+[[eudev]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "ccab901f76a56a0a324fe869523f9824aa49e189"
+libc = "glibc"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "fedb0efdb1abe35e009f9ea2dabdfa74e040811eaa75123604e4360a60568ded"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.armv7l-linux-gnueabihf.tar.gz"
+[[eudev]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "d14d6dabb9ca979c0abc520f9a31d6801511183c"
+libc = "musl"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "2794ae2e41f71c1074e7135c6df781a2ab089b8bc5bda4c5b900195a30ad0e70"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.armv7l-linux-musleabihf.tar.gz"
+[[eudev]]
+arch = "i686"
+git-tree-sha1 = "108b07b3de090e9ccbf1a33b5b7277fd1cbb6bb3"
+libc = "glibc"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "d1104d8fd886a6a7f5c7bc13be77fe37bd21455d84404e9bf1e74d550e79a179"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.i686-linux-gnu.tar.gz"
+[[eudev]]
+arch = "i686"
+git-tree-sha1 = "199dfd6acb5deec80726c3c0c61b7e4c807adca6"
+libc = "musl"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "cf41b6b7eade4bca66a6d5d8540e96f23b221e67febd69ee4d178612d635a029"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.i686-linux-musl.tar.gz"
+[[eudev]]
+arch = "powerpc64le"
+git-tree-sha1 = "e6e2664a1dbe12a3309c600b337ea58ddc954bdf"
+libc = "glibc"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "055f30f99fa0b817d1d6f04b44e46ef10f41487ed8884f0d8c2929429ba8a7c5"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.powerpc64le-linux-gnu.tar.gz"
+[[eudev]]
+arch = "x86_64"
+git-tree-sha1 = "872754c2f795d19a3e2e205b2bbaea659f28d11e"
+libc = "glibc"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "a8bdf20e664b0111b2e5692739e011e59480939413608eead60242a18f4f92c0"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.x86_64-linux-gnu.tar.gz"
+[[eudev]]
+arch = "x86_64"
+git-tree-sha1 = "e7c462936bb41bf45dc5cc331aa9948fad183cca"
+libc = "musl"
+os = "linux"
+
+    [[eudev.download]]
+    sha256 = "90df68cadf8ae75c689d611abbcafa614487b049712ab3137c506af45120cdb9"
+    url = "https://github.com/JuliaBinaryWrappers/eudev_jll.jl/releases/download/eudev-v3.2.9+0/eudev.v3.2.9.x86_64-linux-musl.tar.gz"

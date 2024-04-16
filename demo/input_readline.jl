@@ -1,4 +1,5 @@
-print("\033c")
+print("\033c") # cls
+
 println("Input Int per 'readline()' :")
 
 user_input = readline()

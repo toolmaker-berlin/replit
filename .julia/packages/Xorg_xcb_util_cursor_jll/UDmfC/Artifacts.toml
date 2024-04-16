@@ -1,0 +1,91 @@
+[[Xorg_xcb_util_cursor]]
+arch = "aarch64"
+git-tree-sha1 = "8ac4df634959ae2aa74870a34a5648a64f60319d"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "8acc71e33acdd07b4cef5c37c39786358df157edae6ddcb25275ecfaa480361b"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.aarch64-linux-gnu.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "aarch64"
+git-tree-sha1 = "04e0a5c69ec23bf9589d7529883afa26e6ce2f14"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "1043b1a8e5739554a85506685c49d66f5bf49aaa0c13b5aa29a363b50bcf616e"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.aarch64-linux-musl.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "aa69b6053f0484784198775045ec3725abc97cb5"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "29443b0d448273197855d5e37c274bb536515f935eb2aab7fa5a6a72aac24c02"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.armv7l-linux-gnueabihf.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "022e2464cdb53de9cadcda1010a30bad4a8dcafb"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "d1abe74b9dc80dd266bdf1148c80811e61eb81e43aaf41738e2d6e336dcc9206"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.armv7l-linux-musleabihf.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "i686"
+git-tree-sha1 = "81734be881f6a6d0f4329157e2dd7f663d051721"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "09b6b460b7fdedccdc51e36662df7a59660dbf9110893964e29ecaf157975728"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.i686-linux-gnu.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "i686"
+git-tree-sha1 = "d5988914b2fbd0131c7ab6f47a607bd143d6d502"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "f83a59b3731f6c88901f2c4b9b95d0405eada1b463f1d19c7a0d26035da3a7db"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.i686-linux-musl.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "powerpc64le"
+git-tree-sha1 = "72ca9a75ec9eecccc509f5160c5d7982b3eef255"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "f25a5d02ad9410cfb70711c35cac0cd178509efcb26bfc63da5043081d227796"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.powerpc64le-linux-gnu.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "x86_64"
+git-tree-sha1 = "40eea58ff37ecc8fb6f21f41079a33b511b3ff92"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "54ebb9598869a458339030ecd00bd294b5f19b48dee0779b4797d735f309d67b"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.x86_64-linux-gnu.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "x86_64"
+git-tree-sha1 = "dd409cb78b96b884258a26ec5b08e3bbafd97984"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "d796fb2ff1f41b5f34a2a726de6818be174cbcbe0d839662d057e60aa054ed99"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.x86_64-linux-musl.tar.gz"
+[[Xorg_xcb_util_cursor]]
+arch = "x86_64"
+git-tree-sha1 = "d3514d03071657c0761d58804306e1ef27f6b663"
+os = "freebsd"
+
+    [[Xorg_xcb_util_cursor.download]]
+    sha256 = "fcf1ae3ced849d15d6315178c3f04f920009d845491129554aaea2cabe6b7636"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_cursor_jll.jl/releases/download/Xorg_xcb_util_cursor-v0.1.4+0/Xorg_xcb_util_cursor.v0.1.4.x86_64-unknown-freebsd.tar.gz"

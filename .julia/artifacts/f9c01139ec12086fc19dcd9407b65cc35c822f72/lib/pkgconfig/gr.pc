@@ -1,0 +1,11 @@
+prefix=/workspace/destdir
+libdir=/workspace/destdir/lib
+includedir=/workspace/destdir/include
+sopath=${libdir}/libGR.so
+
+Name: GR
+Description: GR is a universal framework for visualization applications
+Requires.private: gks
+Version: 0.73.3
+Cflags: -I${includedir}
+Libs: -L${libdir} -lGR

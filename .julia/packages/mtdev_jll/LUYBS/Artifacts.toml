@@ -1,0 +1,103 @@
+[[mtdev]]
+arch = "aarch64"
+git-tree-sha1 = "6d1c920557f80c3ff8fd9d0b18d74f56d2d4571f"
+libc = "glibc"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "311b14c1bc0613a2c7a7df214cf668dfc65dc382fec67f6aa97c11607ddde9cc"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.aarch64-linux-gnu.tar.gz"
+[[mtdev]]
+arch = "aarch64"
+git-tree-sha1 = "ccc6c5d24c2e27520a7a9b2b5e496b469d0bcdeb"
+libc = "musl"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "7626b9b21534fbe3896f82b54baa8b5023b4e031c9a43c557f1d05ff269bf733"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.aarch64-linux-musl.tar.gz"
+[[mtdev]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "d94d9f6827aa560cb5b20ccd14c3665362a5be3c"
+libc = "glibc"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "6742e1f5f2fab8f1ac58c19504c887ddd1f2652dd264afdf4366afe8b4836962"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.armv6l-linux-gnueabihf.tar.gz"
+[[mtdev]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "e68777c59bd6db2025e634f147cce55762ca5b32"
+libc = "musl"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "357b5d210a8e3cf99597989ce39f6cee3ba695e1c39025bdc221ef88e97ec24c"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.armv6l-linux-musleabihf.tar.gz"
+[[mtdev]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "95e83491581a70a204b614b204d5f70db46068fd"
+libc = "glibc"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "d4a6f0b0ec4ff5999fe91ae5951a172e170166d4408a0712f74d26b25084985e"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.armv7l-linux-gnueabihf.tar.gz"
+[[mtdev]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "9f92fb47d5004f88abfa55c88e4f17df37b470b3"
+libc = "musl"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "6bb9239913bfeeb0e984c081edd17596dac73d8e85604db6bc4d062439a66f66"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.armv7l-linux-musleabihf.tar.gz"
+[[mtdev]]
+arch = "i686"
+git-tree-sha1 = "84a243170c55abc400fba15bec0655e5b057ce9e"
+libc = "glibc"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "8616ebe75bbaa0b0610a283319f123a2bc27f9ae36d1c37d78c89d2e5db1bb81"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.i686-linux-gnu.tar.gz"
+[[mtdev]]
+arch = "i686"
+git-tree-sha1 = "a7fb8b8695a80416d5e3bf64de5da41954fc707d"
+libc = "musl"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "d09efc54d38b98e656792fdfd9a125d8afabab5bc5f29a1587f56b0a374ae8e2"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.i686-linux-musl.tar.gz"
+[[mtdev]]
+arch = "powerpc64le"
+git-tree-sha1 = "d4e39644e0ec722340bc9d810ed0254410fbe2cd"
+libc = "glibc"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "133790ced7fb8e173093a2a4e1db275f74c0b8f16f93e882499689085d5a7e64"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.powerpc64le-linux-gnu.tar.gz"
+[[mtdev]]
+arch = "x86_64"
+git-tree-sha1 = "7da37be2742b3d1cfe1c14bf5bbd85aed4887f46"
+libc = "glibc"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "90e2ad425ce0152c408be55e9c0ce8932a728621511c2291ddd570b92b69147f"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.x86_64-linux-gnu.tar.gz"
+[[mtdev]]
+arch = "x86_64"
+git-tree-sha1 = "d22409333e6ae0b9385fc94bc2ff83dd3f06e35d"
+libc = "musl"
+os = "linux"
+
+    [[mtdev.download]]
+    sha256 = "c72bc0d005f5915aef5496a0c1fabd802c5699854cc89fe20d5089165b672cb5"
+    url = "https://github.com/JuliaBinaryWrappers/mtdev_jll.jl/releases/download/mtdev-v1.1.6+0/mtdev.v1.1.6.x86_64-linux-musl.tar.gz"

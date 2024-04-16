@@ -1,0 +1,143 @@
+[[gperf]]
+arch = "aarch64"
+git-tree-sha1 = "34b9a5702fe42ddb003e7885ea3ab18b3c108b58"
+os = "macos"
+
+    [[gperf.download]]
+    sha256 = "dd035c166b3d6e756ff81d72cbaa433a6f6881f60768163b38f9c80bdde833db"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.aarch64-apple-darwin.tar.gz"
+[[gperf]]
+arch = "aarch64"
+git-tree-sha1 = "cf074e468c191bc07ab495569f67dce71494f0d6"
+libc = "glibc"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "4a52f796b79a21ea44908c73aea959efa868f34a80a4996b0522252b9a0d7412"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.aarch64-linux-gnu.tar.gz"
+[[gperf]]
+arch = "aarch64"
+git-tree-sha1 = "6c0f0b7d7809e93d82603943dfe22c2848040b48"
+libc = "musl"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "3199692fdef6ca3e8a36b22d08b212c982b7cc4d05fe5534f43cda2990f1bb63"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.aarch64-linux-musl.tar.gz"
+[[gperf]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "a49be69016eb667c0207b813c1d3740548eb3b96"
+libc = "glibc"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "d712c9be4c54c905f401a78e91a105ecb194f29556c0d0c1a9e4c381789c0d6d"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.armv6l-linux-gnueabihf.tar.gz"
+[[gperf]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "5add1777f61879ae3e3d2bcf1a4cdc710edf9a46"
+libc = "musl"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "7b34e76a9a0305a04c04a7d639b2f97575122cdbb9d47beae14d6f0ec16833dc"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.armv6l-linux-musleabihf.tar.gz"
+[[gperf]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "12b7043d226f5f9ef374651c5125159624e8e799"
+libc = "glibc"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "48b544097dea549d04b51efaa6b09e2cdea636467381c1ba081a50ef9823fa11"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.armv7l-linux-gnueabihf.tar.gz"
+[[gperf]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "f40f439b720209b56fd433f2b6ac004ab7018823"
+libc = "musl"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "0346e5d0adb62f65a1276e9faedc1441ab4c07bcd4ffe08ffc3c5d4dfb16d378"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.armv7l-linux-musleabihf.tar.gz"
+[[gperf]]
+arch = "i686"
+git-tree-sha1 = "3b470016e53cb9b8a1c2f3f7360af96a6f716a25"
+libc = "glibc"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "83dba814a2e0544acb7ee6a9036801a90502713b2ab7e6568e7c090fd4e54f59"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.i686-linux-gnu.tar.gz"
+[[gperf]]
+arch = "i686"
+git-tree-sha1 = "1f4e43f8e5939bc38c6efc257d6d02d8f4231492"
+libc = "musl"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "b512b1723c23bb01ee8934d321440a5722771ceb9538544dad49ae38b1553bbd"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.i686-linux-musl.tar.gz"
+[[gperf]]
+arch = "i686"
+git-tree-sha1 = "8a8040e7fc3cc44bd15212b8f6df5317b4307782"
+os = "windows"
+
+    [[gperf.download]]
+    sha256 = "e34afb46e142c826edfb73bbd1dc02f62faf8cfae58f0ba78acc54b5e5ebf246"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.i686-w64-mingw32.tar.gz"
+[[gperf]]
+arch = "powerpc64le"
+git-tree-sha1 = "780d362a11dbd7882de57a14dd57fd8a66b32f32"
+libc = "glibc"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "f44be898329ef37076275b579aaa73f6c9ba5e80c5690eae2f2b410f38473e09"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.powerpc64le-linux-gnu.tar.gz"
+[[gperf]]
+arch = "x86_64"
+git-tree-sha1 = "f6618290526000ba14651102f005fb169701dab4"
+os = "macos"
+
+    [[gperf.download]]
+    sha256 = "19c131a61df016a8fb78c27d7b07cfbdea597be968427d0548fcb17f538e5256"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.x86_64-apple-darwin.tar.gz"
+[[gperf]]
+arch = "x86_64"
+git-tree-sha1 = "af6eb07d6de6436dbb1284498166f8a8d69ac44f"
+libc = "glibc"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "e30c9a32d0625217483e10d52067cba50de944a165d56bff0983df2899e484be"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.x86_64-linux-gnu.tar.gz"
+[[gperf]]
+arch = "x86_64"
+git-tree-sha1 = "0ab2e8113857ffacdc48be94abc4db29a38ef470"
+libc = "musl"
+os = "linux"
+
+    [[gperf.download]]
+    sha256 = "0132754678ffe8a8a02420f08274c80805939052994439055d3a0b6bf99a681e"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.x86_64-linux-musl.tar.gz"
+[[gperf]]
+arch = "x86_64"
+git-tree-sha1 = "14c869bdb45d0c1faaad93392b6b6fd57fdfb321"
+os = "freebsd"
+
+    [[gperf.download]]
+    sha256 = "b7a4949bf111b82226ffc78fbdb62971563944fe808f13d3a16a13acb95ba766"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.x86_64-unknown-freebsd.tar.gz"
+[[gperf]]
+arch = "x86_64"
+git-tree-sha1 = "ab191a557185bd640bce39d41aeee9c38a2696c4"
+os = "windows"
+
+    [[gperf.download]]
+    sha256 = "8e6260cd3530a2098efedb3fdd879a250bd29ecf40e3a067c6a39619352291a4"
+    url = "https://github.com/JuliaBinaryWrappers/gperf_jll.jl/releases/download/gperf-v3.1.1+0/gperf.v3.1.1.x86_64-w64-mingw32.tar.gz"

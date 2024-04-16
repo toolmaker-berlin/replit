@@ -1,0 +1,89 @@
+[[Xorg_libICE]]
+arch = "armv7l"
+git-tree-sha1 = "b55f0166fe5465a847d47a90d1ea3705581a2b49"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "6dec4ac6b7abcee8dbb9a58fde9904d71403f187026e134aafa0ed0fa941640c"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.armv7l-linux-gnueabihf.tar.gz"
+[[Xorg_libICE]]
+arch = "i686"
+git-tree-sha1 = "b033fff2d123d8a2608c2a047dbc546ea60dcf01"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "5488f669807148c6672c464bd8dfe9dc56b012a3be85b24fcbb7de20ac6d6b3e"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.i686-linux-musl.tar.gz"
+[[Xorg_libICE]]
+arch = "aarch64"
+git-tree-sha1 = "280f8250167389344725cd3a5f6ef5ca38303da4"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "2926e1d8d96243944d1c3409ab129d6ead91a0efde03b39282e511ce0c03bfd8"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.aarch64-linux-gnu.tar.gz"
+[[Xorg_libICE]]
+arch = "armv7l"
+git-tree-sha1 = "68da4c13ac09ac0a361350b6bdfe5d586bb3b822"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "ab1844440aab949a9bfb8f42020064c0745cd9a3d0280f5cfd347d163d03369e"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.armv7l-linux-musleabihf.tar.gz"
+[[Xorg_libICE]]
+arch = "aarch64"
+git-tree-sha1 = "e9f063c65aa9187592f6cd410f62783828daa156"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "aab94cd72eaa2dcb17033d367a0129c5b4521c33b5e20d9238d0f6b2c38ad36b"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.aarch64-linux-musl.tar.gz"
+[[Xorg_libICE]]
+arch = "x86_64"
+git-tree-sha1 = "607dd82b9a8da7696d90df6ddd776ee641f0ee3a"
+os = "freebsd"
+
+    [[Xorg_libICE.download]]
+    sha256 = "f2389d98b4e893db603cf145832d4c5a0198d9ab396504ea578da10424788892"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.x86_64-unknown-freebsd11.1.tar.gz"
+[[Xorg_libICE]]
+arch = "i686"
+git-tree-sha1 = "d9b2c9ea49f91817ad52b94f3f9013b20d2b34be"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "5080c59389d2865795ac97123cae937bb53922ab1c0bc927e737f0dc2ae965d0"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.i686-linux-gnu.tar.gz"
+[[Xorg_libICE]]
+arch = "x86_64"
+git-tree-sha1 = "76e6ab78a3b61bc4839b2c37006713df5f225eea"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "d6d50d215b36aa58caf603429431f956456c543a383f7bc6d4f3036dc858cdf2"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.x86_64-linux-musl.tar.gz"
+[[Xorg_libICE]]
+arch = "x86_64"
+git-tree-sha1 = "cc3814d078996afbcf901d6b08e5d311a4ea6f81"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "8cbb7d303f77e9e515676e54746be90cca321d543f9e597ad2d1402429a7ab66"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.x86_64-linux-gnu.tar.gz"
+[[Xorg_libICE]]
+arch = "powerpc64le"
+git-tree-sha1 = "6b9060a5a2caa5fc63163c5f137e55d80dbd1ce4"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_libICE.download]]
+    sha256 = "47e2a27ed17d47c7dbfbf8a1e5ded75acca0c579253a59e091498a392f3fdf37"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_libICE_jll.jl/releases/download/Xorg_libICE-v1.0.10+1/Xorg_libICE.v1.0.10.powerpc64le-linux-gnu.tar.gz"

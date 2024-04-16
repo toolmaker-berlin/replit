@@ -1,0 +1,103 @@
+[[libevdev]]
+arch = "aarch64"
+git-tree-sha1 = "a071f72ad69147e58d4f9e73595fc18e7cad7c5d"
+libc = "glibc"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "0d59c7fe45195df1fbab1f4116d2a483a2a79e8e51d7f437d9786b83d90957df"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.aarch64-linux-gnu.tar.gz"
+[[libevdev]]
+arch = "aarch64"
+git-tree-sha1 = "0e48faf39bea42d9c0fa3f79c19b4d47d8bd7d45"
+libc = "musl"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "b3b80d56f7e2056d29fab992f7e8c0c34d42d58711757a1140c8458ebcd74c6a"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.aarch64-linux-musl.tar.gz"
+[[libevdev]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "80a99593ac374e096de432d6b7a8064718781505"
+libc = "glibc"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "b0506c6b84f62fe4a841f442778848cc89e1c1bbe685544a38725fb4166b04e2"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.armv6l-linux-gnueabihf.tar.gz"
+[[libevdev]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "41d0f3577c9582df1150ba6f8bebb49bf3620c35"
+libc = "musl"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "0667da6c5df4e84374c537b6288ec12978b9fc0262948ab5f4151e8831e3ffb3"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.armv6l-linux-musleabihf.tar.gz"
+[[libevdev]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "bf92a61e752186140b246598412278077928dcb1"
+libc = "glibc"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "ac1f6bdb0a5004a9e9649fe3bfd02a91cb72930ef8c372d21c3d44ea13677750"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.armv7l-linux-gnueabihf.tar.gz"
+[[libevdev]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "76ff9e2e4f516844ca74d5816f3c35aae10b8803"
+libc = "musl"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "01c64bcd7a120d1a0a531cf8935e704b00cf929ff4270b9b445828720ca7e4ab"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.armv7l-linux-musleabihf.tar.gz"
+[[libevdev]]
+arch = "i686"
+git-tree-sha1 = "854c6b8c268084fb0498803be8782c053354b3e2"
+libc = "glibc"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "a67bd91be254cf62175dfac92281641fa4a3f2a915f5a14c5c360110af4113ee"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.i686-linux-gnu.tar.gz"
+[[libevdev]]
+arch = "i686"
+git-tree-sha1 = "256ea623e4ef2f551ccba148d5280c878fe8e10f"
+libc = "musl"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "b2c26a21f00e3c38a2ae2a8bcf8ef5d5068c18e43b5424a633e9ac54cf859a1d"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.i686-linux-musl.tar.gz"
+[[libevdev]]
+arch = "powerpc64le"
+git-tree-sha1 = "30990a08c33d747ec6a860478f5dc83f23a4b246"
+libc = "glibc"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "7af26e863652ff62576e5127e1a5e2a6e50c20be3cb65399a3aa6826927c2a27"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.powerpc64le-linux-gnu.tar.gz"
+[[libevdev]]
+arch = "x86_64"
+git-tree-sha1 = "c35cb3f6f3043a4e962fd56b61ad91b4adb557f7"
+libc = "glibc"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "cc46f55fa92770fa7100d2b5e1f34d08b1a0860df70e5c24a56fec5665da0940"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.x86_64-linux-gnu.tar.gz"
+[[libevdev]]
+arch = "x86_64"
+git-tree-sha1 = "54ae1bb4e7594f4865ca53c192667a8c366bfff4"
+libc = "musl"
+os = "linux"
+
+    [[libevdev.download]]
+    sha256 = "c60a69312d0de0ae9050e81e78a3f2984f71c4a2882914dcc4a88a9af66076eb"
+    url = "https://github.com/JuliaBinaryWrappers/libevdev_jll.jl/releases/download/libevdev-v1.11.0+0/libevdev.v1.11.0.x86_64-linux-musl.tar.gz"

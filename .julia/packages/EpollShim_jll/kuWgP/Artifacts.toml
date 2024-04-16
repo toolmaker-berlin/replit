@@ -1,0 +1,8 @@
+[[EpollShim]]
+arch = "x86_64"
+git-tree-sha1 = "4eab25dbb2b04a2e2de67270a1cace16e217ef4c"
+os = "freebsd"
+
+    [[EpollShim.download]]
+    sha256 = "a195fcf68a83d0fe7ff0f63bed13f2c1c805269a60340a7a6af69440c93d4053"
+    url = "https://github.com/JuliaBinaryWrappers/EpollShim_jll.jl/releases/download/EpollShim-v0.0.20230411+0/EpollShim.v0.0.20230411.x86_64-unknown-freebsd.tar.gz"

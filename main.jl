@@ -2,7 +2,7 @@
 # Nur 1xRun (main.jl) (DEMO)
 # REPLIT macht Fehler, 
 # (RUN/STOP/EDIT/RUN-ZYKLUS)
-# besser die SHELL benutzen!
+# besser nur SHELL benutzen!
 #            ===============
 # Stand 8. April 2024
 # --------------------------
@@ -16,7 +16,7 @@ catch
   run(`sh -c $script`;wait=true)
 end
 
-# include("test.jl")
+# include("nur ohne cursor.jl")
 
 # exit(0) # KEIN EXIT
 # STOP/EDIT/RUN 

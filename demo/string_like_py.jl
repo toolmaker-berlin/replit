@@ -1,3 +1,5 @@
+print("\033c") # cls
+
 import Base.:+
 import Base.:*
 

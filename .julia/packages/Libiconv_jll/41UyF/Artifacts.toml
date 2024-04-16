@@ -1,0 +1,143 @@
+[[Libiconv]]
+arch = "aarch64"
+git-tree-sha1 = "92b949e2f3a66439c69a8d334fc95810fbd9df9b"
+os = "macos"
+
+    [[Libiconv.download]]
+    sha256 = "608336f578104c2b556d5c6cbfe1d00bc1ec15b863659f2b72d252138b28d7ad"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.aarch64-apple-darwin.tar.gz"
+[[Libiconv]]
+arch = "aarch64"
+git-tree-sha1 = "03b10cbd6d7f8c01a1d1c57eab6b75833be40dbb"
+libc = "glibc"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "c79172f176e2ad5d41f18e685e17e357be0e5869aac358bdab5e7e624c7b8eec"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.aarch64-linux-gnu.tar.gz"
+[[Libiconv]]
+arch = "aarch64"
+git-tree-sha1 = "3fafd18cdbc65a0336a619250471d90c631e54d4"
+libc = "musl"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "b0c22eeff2b123d2e863c0db62531bb086545cae2a8f6ccabc2442f185168f14"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.aarch64-linux-musl.tar.gz"
+[[Libiconv]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "d2c1484ca953ab271e62eb2e45ee601cee4c0ed7"
+libc = "glibc"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "16e1fb5e025b7d319e611060b3a25738844ebd85de2c94e06ecd5b369ac82481"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.armv6l-linux-gnueabihf.tar.gz"
+[[Libiconv]]
+arch = "armv6l"
+call_abi = "eabihf"
+git-tree-sha1 = "47f58754631080b11a83895a576f8066ba20b91c"
+libc = "musl"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "aa2a70e3f128d60b2789949ba146c5df9ee7c2ba7135f278da84393706591d77"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.armv6l-linux-musleabihf.tar.gz"
+[[Libiconv]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "493408ea32ca68042fcd393837f9f261e710b81a"
+libc = "glibc"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "a7693f7cda9728bc6a5d7edfe38e66a9201b75b983c86f566ad434a363b26d32"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.armv7l-linux-gnueabihf.tar.gz"
+[[Libiconv]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "ecc9f619ceddc473aed7f88e084b9c6c811e740d"
+libc = "musl"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "8d1db1460f1ab60c98899054fe0e9ac7fbf43f610bf3ec069b9e152bc6b1c571"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.armv7l-linux-musleabihf.tar.gz"
+[[Libiconv]]
+arch = "i686"
+git-tree-sha1 = "9c9aa992cf53862ba9049c3468799aa47a28e5df"
+libc = "glibc"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "a38a445e56f0b4a65f3515eb56b4c135af284fa0f287690e9b19d8e93c204f94"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.i686-linux-gnu.tar.gz"
+[[Libiconv]]
+arch = "i686"
+git-tree-sha1 = "41d6ec6cb13bac06076397ce67cab5784cfb34c4"
+libc = "musl"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "ab362a0ca5da101e2f3a6f2356a42b9e5e85e5871e6f3535221c81e62bff95e6"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.i686-linux-musl.tar.gz"
+[[Libiconv]]
+arch = "i686"
+git-tree-sha1 = "b1154731ffeb69cae7685ef7ed01bd89e3dce5a7"
+os = "windows"
+
+    [[Libiconv.download]]
+    sha256 = "e88bab26bccb8c32ab14b09389e0dbae0f217025fa2f21d89ce7f1d6de567983"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.i686-w64-mingw32.tar.gz"
+[[Libiconv]]
+arch = "powerpc64le"
+git-tree-sha1 = "8365f8110c48005e34bd1a1e63de4ca7185d0c5f"
+libc = "glibc"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "1eb4bad3e54cb3d1d1ec5ca3253105d2d796f05ecb9c56445fdc8e48a8a05de1"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.powerpc64le-linux-gnu.tar.gz"
+[[Libiconv]]
+arch = "x86_64"
+git-tree-sha1 = "1e901863cf8fbb1ee50a5d0976114a2371899331"
+os = "macos"
+
+    [[Libiconv.download]]
+    sha256 = "3b54abefd743a6a80d251d25b267a109f673c5b69380329f5cf351360261a2c9"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.x86_64-apple-darwin.tar.gz"
+[[Libiconv]]
+arch = "x86_64"
+git-tree-sha1 = "e4e0c1bb8f52a7a9d586af15bc1713e83c1f42af"
+libc = "glibc"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "5bd7cf07d6f5c9ab0c3d9561ae7009620edf122d80d9aec8596e3faee8925a41"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.x86_64-linux-gnu.tar.gz"
+[[Libiconv]]
+arch = "x86_64"
+git-tree-sha1 = "37d92cc834202e0b4a8d380d115e4f90f47104e8"
+libc = "musl"
+os = "linux"
+
+    [[Libiconv.download]]
+    sha256 = "709d775a58e26d59f1b819c6549a503ee4484fadda554a01c934c6425ae33a4d"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.x86_64-linux-musl.tar.gz"
+[[Libiconv]]
+arch = "x86_64"
+git-tree-sha1 = "7f55b73b331bc9ab70cbd95a194c89feb3650f16"
+os = "freebsd"
+
+    [[Libiconv.download]]
+    sha256 = "04fd23c8ef902f06d932948689350d4aeede68cc4e4367eb53a645f4412d20f2"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.x86_64-unknown-freebsd.tar.gz"
+[[Libiconv]]
+arch = "x86_64"
+git-tree-sha1 = "81aa39275e8fd66d1457857d24fccb2023955b87"
+os = "windows"
+
+    [[Libiconv.download]]
+    sha256 = "5c3627e8bb0ade5da4da73cfa273114280fd76e431b8f0460305f7d7c260c629"
+    url = "https://github.com/JuliaBinaryWrappers/Libiconv_jll.jl/releases/download/Libiconv-v1.17.0+0/Libiconv.v1.17.0.x86_64-w64-mingw32.tar.gz"

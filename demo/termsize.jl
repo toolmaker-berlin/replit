@@ -1,4 +1,7 @@
 # https://stackoverflow.com/questions/60806139/system-signal-interception-in-julia
+
+print("\033c") # cls
+
 println("Terminal: $(displaysize(stdout))")
 function monitor_term(func)
     @async begin 

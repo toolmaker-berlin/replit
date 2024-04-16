@@ -1,0 +1,14 @@
+name = "eudev_jll"
+uuid = "35ca27e7-8b34-5b7f-bca9-bdc33f59eb06"
+version = "3.2.9+0"
+
+[deps]
+JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+gperf_jll = "1a1c6b14-54f6-533d-8383-74cd7377aa70"
+
+[compat]
+JLLWrappers = "1.2.0"
+julia = "1.0"

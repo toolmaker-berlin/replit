@@ -1,5 +1,7 @@
 { pkgs }: {
     deps = [
+      pkgs.q-text-as-data
+      pkgs.oed
       pkgs.glow
       pkgs.lftp
       pkgs.xorg.setxkbmap

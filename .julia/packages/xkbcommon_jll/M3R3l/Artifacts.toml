@@ -1,0 +1,91 @@
+[[xkbcommon]]
+arch = "aarch64"
+git-tree-sha1 = "c1a47ef9bcecd0321cdefea99d63a9584b0b41ab"
+libc = "glibc"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "4d3dfdf9e009f2fefff72d552c1d4502672f0316f8f56cd42a1a226e8a42fe3a"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.aarch64-linux-gnu.tar.gz"
+[[xkbcommon]]
+arch = "aarch64"
+git-tree-sha1 = "5f088db14502774ce8cb2812b6c77fe7d7954570"
+libc = "musl"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "7e292f081042577f64e04beb5fcd6042c34cd84821d9f448dac6b1e30b5a207e"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.aarch64-linux-musl.tar.gz"
+[[xkbcommon]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "14d9bc397a229382faa006a8222d03981c6b507f"
+libc = "glibc"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "9cceffda4f2570ded40036a3633f3d180a139179a852974a63e11ebb7feee5ca"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.armv7l-linux-gnueabihf.tar.gz"
+[[xkbcommon]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "9eb6a3bce5a7e6c4c65bab3acf8b8a9ec69062fc"
+libc = "musl"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "b1d4fd1f06d3e160b8ea523bb686bfff17794e78f1602b9672e17495ce06dfe5"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.armv7l-linux-musleabihf.tar.gz"
+[[xkbcommon]]
+arch = "i686"
+git-tree-sha1 = "4809ff8e9eb6f6c6f68517ee5b1d12fa952185ec"
+libc = "glibc"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "f5f775b37916a73036f66cf3db3d8a91a237932fb1173d4d9a8a4911f09db4c0"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.i686-linux-gnu.tar.gz"
+[[xkbcommon]]
+arch = "i686"
+git-tree-sha1 = "4c23de7d6370691364d4a0b71d790cc3f96aef26"
+libc = "musl"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "21e86e821cb2281c7f6fd45d2632f7842829f20ca2bbd772601fb1408b680533"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.i686-linux-musl.tar.gz"
+[[xkbcommon]]
+arch = "powerpc64le"
+git-tree-sha1 = "5a13256faee658c5dc34f43ae921ddcf2442164a"
+libc = "glibc"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "a182fa963dcb14d83aa859eb75dc02b37591f694e9b88ba298eaa38ea2435fab"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.powerpc64le-linux-gnu.tar.gz"
+[[xkbcommon]]
+arch = "x86_64"
+git-tree-sha1 = "aa52699bd1491b7de9c72fc1eab21e2e4bd649e2"
+libc = "glibc"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "f1986abb79046e846314eba168658cb994e26ddc10200cd1ed66b686d088e354"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.x86_64-linux-gnu.tar.gz"
+[[xkbcommon]]
+arch = "x86_64"
+git-tree-sha1 = "d26deb93241672d9cac6fb726236cb5de4996ed0"
+libc = "musl"
+os = "linux"
+
+    [[xkbcommon.download]]
+    sha256 = "49e3d7dbb2913028ad3e6edc327ca3cbcc8b23a3ac0f7bc1f898a5c392dba520"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.x86_64-linux-musl.tar.gz"
+[[xkbcommon]]
+arch = "x86_64"
+git-tree-sha1 = "2a9436a0a0402653e890ffc429587fd7a83de02b"
+os = "freebsd"
+
+    [[xkbcommon.download]]
+    sha256 = "a91abb56a284dd6142f6561888f8be99a2c89dec033da9f7df8baa8a00b28b0a"
+    url = "https://github.com/JuliaBinaryWrappers/xkbcommon_jll.jl/releases/download/xkbcommon-v1.4.1+1/xkbcommon.v1.4.1.x86_64-unknown-freebsd.tar.gz"

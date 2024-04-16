@@ -1,8 +1,7 @@
 import time, sys
 
-
 text=sys.version.split(" ")
-text="\nHarry's SI 4.01 Replit (Python: "+text[0]+")"
+text="\033c"+"Harry's SI 4.2 Replit (Python: "+text[0]+")"
 print(text)
 print("-"*(len(text)-1))
 
@@ -73,12 +72,11 @@ def count_primes(max_num: int):
 count_primes(1)
 core+=ms_einzel
 
-def result(text,c):
-  core=int(c+.5)
-  punkte1=int(1000/core)
+def result(text,core):
+  punkte1=(1000/core)+0.05
 
   print("\n"+text)
-  print("Core-Index: %3.0f" % punkte1)
+  print("Core-Index: %3.1f" % punkte1)
 
 result("This System",core)
 result("MPro TrashCan",131)

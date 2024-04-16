@@ -1,0 +1,91 @@
+[[Libglvnd]]
+arch = "aarch64"
+git-tree-sha1 = "f63129eb553126f1538020bc1657854d31aa2211"
+libc = "glibc"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "202f4d86e292dcb00fa7486764f14df149303bfa92774a676d0730a9fa05dc84"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.aarch64-linux-gnu.tar.gz"
+[[Libglvnd]]
+arch = "aarch64"
+git-tree-sha1 = "f19095d3797d2a9d1af8ddf33107b658da9b3699"
+libc = "musl"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "40b0754611cc1a8874e93831d967905b94abd58ac9764b6a954ecae197215b50"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.aarch64-linux-musl.tar.gz"
+[[Libglvnd]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "ccba6e811035def3e92cb86fc8025888745f18e8"
+libc = "glibc"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "fe39fe3ea58d5c619b47c74c9c199bec38fc235df8faa222464a92036c93f1a5"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.armv7l-linux-gnueabihf.tar.gz"
+[[Libglvnd]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "c417a9e4961373105610d5b2cec41c275e1290b8"
+libc = "musl"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "2ac983fbe34b0df1a11eb5171f1d36c6dec53d4e8e7fcaa4119e5a4dcd7b0b43"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.armv7l-linux-musleabihf.tar.gz"
+[[Libglvnd]]
+arch = "i686"
+git-tree-sha1 = "785136651a7b909801ab1dc1ccd1ae3378ee8410"
+libc = "glibc"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "92ae36b660b8a619267afca0213d80e40bb7d204c40a24520f871129edb361c5"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.i686-linux-gnu.tar.gz"
+[[Libglvnd]]
+arch = "i686"
+git-tree-sha1 = "c36c9ca99b164b6cda62e1158f2742ea7a3086a5"
+libc = "musl"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "0dacfdf3d87aa05a1db8c7350d2f585af82e4e2f675804eeed06082c08f2317f"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.i686-linux-musl.tar.gz"
+[[Libglvnd]]
+arch = "powerpc64le"
+git-tree-sha1 = "b40ef6740a5cc3fd310870558f18ce87e259c197"
+libc = "glibc"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "8fd2713066e4b823bbc5b5ff62733c5e215a24247ebb7221422fce515ec8c49b"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.powerpc64le-linux-gnu.tar.gz"
+[[Libglvnd]]
+arch = "x86_64"
+git-tree-sha1 = "37dda4e57d9de95c99d1f8c6b3d8f4eca88c39a2"
+libc = "glibc"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "c73957bc110c5897ad10107acef40b0a5c2e53f248d4e389683fe289e8c6b19f"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.x86_64-linux-gnu.tar.gz"
+[[Libglvnd]]
+arch = "x86_64"
+git-tree-sha1 = "edb363f53d867cede8138f7aca461140365aeb91"
+libc = "musl"
+os = "linux"
+
+    [[Libglvnd.download]]
+    sha256 = "ccf435f39f33532f3e80fbccf46b8a4ab735b4f677bb7a526067b335c0b4ddfa"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.x86_64-linux-musl.tar.gz"
+[[Libglvnd]]
+arch = "x86_64"
+git-tree-sha1 = "027237990f8493ebe1dc302cae258712ac359538"
+os = "freebsd"
+
+    [[Libglvnd.download]]
+    sha256 = "8a25a8b1b5d8452714a7e5aaff9c092f80e8efb5b5c8dd946bffbdd946e58aad"
+    url = "https://github.com/JuliaBinaryWrappers/Libglvnd_jll.jl/releases/download/Libglvnd-v1.6.0+0/Libglvnd.v1.6.0.x86_64-unknown-freebsd.tar.gz"

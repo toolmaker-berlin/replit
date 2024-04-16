@@ -1,0 +1,123 @@
+[[Vulkan_Loader]]
+arch = "aarch64"
+git-tree-sha1 = "4b3b2d79556cc3aef6e3d8a234649cc85b91bb87"
+os = "macos"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "a530e19d093da75429f17f2776ebcc0abba0684204bd09ee9892d98c987089de"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.aarch64-apple-darwin.tar.gz"
+[[Vulkan_Loader]]
+arch = "aarch64"
+git-tree-sha1 = "5dcd12211e30b22e2ea55cfcece9ec1740e8e891"
+libc = "glibc"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "b385a757e3dd7283de86dbba683ef662162c747ac2829fc09681a4b281f31aa9"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.aarch64-linux-gnu.tar.gz"
+[[Vulkan_Loader]]
+arch = "aarch64"
+git-tree-sha1 = "801846524933bd9886079049e984683fa21f4c48"
+libc = "musl"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "6e3f55ee9ca47d2647e031f798d2d82dd8240020c41498a7408db0d308ad4893"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.aarch64-linux-musl.tar.gz"
+[[Vulkan_Loader]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "5370e4571ac4f671c5eff0c35e91a8a7fcb1a399"
+libc = "glibc"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "e86db401b0c18d58234118e8040efebd4f370a895fb30ed254a00464087b6484"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.armv7l-linux-gnueabihf.tar.gz"
+[[Vulkan_Loader]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "91c9c0c92a21527011fc65896e84037fb7556563"
+libc = "musl"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "286165f926137d04a829b156b4efcecfe0c9101aca1bd5c0eb0fa37e847aeecd"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.armv7l-linux-musleabihf.tar.gz"
+[[Vulkan_Loader]]
+arch = "i686"
+git-tree-sha1 = "b853d793c121ff3544b8fa7122356178331d5c05"
+libc = "glibc"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "65d4a186c75265a9e5f729aa9e238df65e7210628a297f4239214d7d51db0451"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.i686-linux-gnu.tar.gz"
+[[Vulkan_Loader]]
+arch = "i686"
+git-tree-sha1 = "3f5fa3a80065d35bd961d8d99a417893d36d3b0e"
+libc = "musl"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "3c0ac979cce5027f03b157b9d3c72e8d993664ea83aeba5d2ef2b21c7053b535"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.i686-linux-musl.tar.gz"
+[[Vulkan_Loader]]
+arch = "i686"
+git-tree-sha1 = "628888cffaf92e0c3e9f8faadbb129cb747b7e00"
+os = "windows"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "c490886483b7088080f2ff4209bf9ddde07d752328ea0aba3ee7c84d24174e2d"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.i686-w64-mingw32.tar.gz"
+[[Vulkan_Loader]]
+arch = "powerpc64le"
+git-tree-sha1 = "aa17ebc29abe946cf06e03c327f7b92e612cc7f6"
+libc = "glibc"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "4bd11d8a814ab8cd6945668e50881ee5582903a3767c2251f5537741ac9a6cad"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.powerpc64le-linux-gnu.tar.gz"
+[[Vulkan_Loader]]
+arch = "x86_64"
+git-tree-sha1 = "912eff7e041876f3994e732ccdfe3cd44b7664e2"
+os = "macos"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "50aa677c05e6f0502cbe4b5bd108e4f39c6023c278a8a406be679e32c8b3cf2c"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.x86_64-apple-darwin.tar.gz"
+[[Vulkan_Loader]]
+arch = "x86_64"
+git-tree-sha1 = "f03dd5ac03468009d5a99bbfcdf336c2dc372de4"
+libc = "glibc"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "3b02981bdc9802760ec3bdaa22efc048f58f5c87ec2c657775b9c3b2d05375fe"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.x86_64-linux-gnu.tar.gz"
+[[Vulkan_Loader]]
+arch = "x86_64"
+git-tree-sha1 = "d905d5397920ef082b3c1b776c4b40426932c0c7"
+libc = "musl"
+os = "linux"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "199f23b8416bbdc2a8317bd24f4dd25b83242c9d6d2240bab309819134ebb902"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.x86_64-linux-musl.tar.gz"
+[[Vulkan_Loader]]
+arch = "x86_64"
+git-tree-sha1 = "e29a2bd5fe5fd21948b0fd980a517081b1088a51"
+os = "freebsd"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "2ef5dfdf0fbbd6d36b21187f6d873e05b8eefe83fb54ef311364c482793a2e08"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.x86_64-unknown-freebsd.tar.gz"
+[[Vulkan_Loader]]
+arch = "x86_64"
+git-tree-sha1 = "848dfc9dd7fae7e0a28e367b621a600925bce9dc"
+os = "windows"
+
+    [[Vulkan_Loader.download]]
+    sha256 = "089b43aba9d4451f9a027df7b7b6baed828fab6e0a49cf13b303de26a390292c"
+    url = "https://github.com/JuliaBinaryWrappers/Vulkan_Loader_jll.jl/releases/download/Vulkan_Loader-v1.3.243+0/Vulkan_Loader.v1.3.243.x86_64-w64-mingw32.tar.gz"

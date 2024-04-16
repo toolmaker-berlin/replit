@@ -1,0 +1,10 @@
+prefix=/workspace/destdir
+libdir=/workspace/destdir/lib
+includedir=/workspace/destdir/include
+sopath=${libdir}/libGKS.so
+
+Name: GKS
+Description: GKS is a Graphical Kernel System implementation
+Version: 0.73.3
+Cflags: -I${includedir}
+Libs: -L${libdir} -lGKS

@@ -1,0 +1,83 @@
+[[libinput]]
+arch = "aarch64"
+git-tree-sha1 = "64f1f1f733064be61d09d688382de4ff50b1b285"
+libc = "glibc"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "b1143a9db7780c18710dea6492a309ca84ad94464dd6d57d74650bd178636099"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.aarch64-linux-gnu.tar.gz"
+[[libinput]]
+arch = "aarch64"
+git-tree-sha1 = "c8b01b0ac31d76fb07b0845059f3360a82a8394f"
+libc = "musl"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "4c122f7d25d434435689000a10f78f855f4e38bad8c7c65d0c6fecf67f0fd853"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.aarch64-linux-musl.tar.gz"
+[[libinput]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "1dbfdcfd70146d17dacbebe4c8ec12e73a358f5f"
+libc = "glibc"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "b22535c44814735afb580b78da8924f3a26f700b8875b22ef67cc44060029bd5"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.armv7l-linux-gnueabihf.tar.gz"
+[[libinput]]
+arch = "armv7l"
+call_abi = "eabihf"
+git-tree-sha1 = "117f9e85db42c2e1fdd05425324dab418af2f028"
+libc = "musl"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "b098594f7dc55d1b91ed0de87ca8e464bb6018455d3e93f8428f8261b26a486a"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.armv7l-linux-musleabihf.tar.gz"
+[[libinput]]
+arch = "i686"
+git-tree-sha1 = "e2c56c08428c19e1fce85be577ca18f028aee738"
+libc = "glibc"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "1213850457a820e11ab4cf29f780b3ecfad654c0a526dff349db1d44f435bd6b"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.i686-linux-gnu.tar.gz"
+[[libinput]]
+arch = "i686"
+git-tree-sha1 = "457428e7d5605deaa56a024173ea6a348a36b6dc"
+libc = "musl"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "5539238ba7b3c9cd2bd96ef57a8d898b2aceba3377b53aa8f44e2d871176e2eb"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.i686-linux-musl.tar.gz"
+[[libinput]]
+arch = "powerpc64le"
+git-tree-sha1 = "97850ff0147f9656d9c704fb346c24175768bff4"
+libc = "glibc"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "2327c3ca6fab182de4932fbc1375a9326e227e87caa1a3b065e3da21319d364b"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.powerpc64le-linux-gnu.tar.gz"
+[[libinput]]
+arch = "x86_64"
+git-tree-sha1 = "13befbe35cffe7da192c7001ece18b4be3aa3720"
+libc = "glibc"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "efcc0c682816e8b66125f3f55b9e77c81951652c12b2fcb06f352eceb4baee2f"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.x86_64-linux-gnu.tar.gz"
+[[libinput]]
+arch = "x86_64"
+git-tree-sha1 = "57d54a6a33bebec5a7ef80bef9c58e337f48a755"
+libc = "musl"
+os = "linux"
+
+    [[libinput.download]]
+    sha256 = "fa97e1f90294122c38315f3437534529d4a17b812d87b9a31dcbe1a05477ee6d"
+    url = "https://github.com/JuliaBinaryWrappers/libinput_jll.jl/releases/download/libinput-v1.18.0+0/libinput.v1.18.0.x86_64-linux-musl.tar.gz"

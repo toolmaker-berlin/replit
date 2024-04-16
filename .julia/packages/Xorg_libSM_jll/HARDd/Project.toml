@@ -1,0 +1,11 @@
+name = "Xorg_libSM_jll"
+uuid = "c834827a-8449-5923-a945-d239c165b7dd"
+version = "1.2.3+0"
+
+[deps]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Xorg_libICE_jll = "f67eecfb-183a-506d-b269-f58e52b52d7c"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+
+[compat]
+julia = "1.0"
