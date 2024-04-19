@@ -31,7 +31,7 @@ inoremap Ö {
 inoremap Ä }
 inoremap ü \
 inoremap Ü \|
-inoremap ß ~
+inoremap ß @
 
 nnoremap ö [
 nnoremap ä ]
@@ -39,7 +39,7 @@ nnoremap Ö {
 nnoremap Ä }
 nnoremap ü \
 nnoremap Ü \|
-nnoremap ß ~
+nnoremap ß @
 
 vnoremap ö [
 vnoremap ä ]
@@ -47,7 +47,7 @@ vnoremap Ö {
 vnoremap Ä }
 vnoremap ü \
 vnoremap Ü \|
-vnoremap ß ~
+vnoremap ß @
 
 
 

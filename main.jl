@@ -4,7 +4,10 @@
 # (RUN/STOP/EDIT/RUN-ZYKLUS)
 # besser nur SHELL benutzen!
 #            ===============
-# Stand 8. April 2024
+#   + MAC ohne  @[]{}\| usw. 
+#   ========================
+#
+# Stand 19. April 2024
 # --------------------------
 
 println("Julia - so nicht!")
@@ -16,8 +19,8 @@ catch
   run(`sh -c $script`;wait=true)
 end
 
-# include("nur ohne cursor.jl")
-
+# include("demo/_mainmenue!.jl")
+# Keine Cursortasten in Console
 # exit(0) # KEIN EXIT
 # STOP/EDIT/RUN 
 # ODER SHELL BENUTZEN!

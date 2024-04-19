@@ -367,3 +367,12 @@
 # time: 2024-04-16 13:32:30 UTC
 # mode: pkg
 	add Plots
+# time: 2024-04-19 13:58:39 UTC
+# mode: pkg
+	st
+# time: 2024-04-19 13:59:03 UTC
+# mode: pkg
+	add Primes
+# time: 2024-04-19 14:01:52 UTC
+# mode: julia
+	using Primes

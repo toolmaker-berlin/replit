@@ -254,6 +254,7 @@ filter {*.nix, 9, z, *.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
 
 " https://github.com/cirala/vifm_devicons
 " source /Users/user/.config/vifm/favicons.vifm 
+" source ~/.config/vifm/favicons.vifm 
 
 
 " ------------------------------------------------------------------------------
