@@ -376,3 +376,84 @@
 # time: 2024-04-19 14:01:52 UTC
 # mode: julia
 	using Primes
+# time: 2024-04-19 20:38:06 UTC
+# mode: pkg
+	st
+# time: 2024-04-19 20:38:53 UTC
+# mode: julia
+	exit(0)
+# time: 2024-04-20 07:33:16 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 07:33:59 UTC
+# mode: shell
+	ls
+# time: 2024-04-20 07:35:15 UTC
+# mode: julia
+	include("_work.jl")
+# time: 2024-04-20 07:35:47 UTC
+# mode: julia
+	cd("demo/")
+# time: 2024-04-20 07:36:25 UTC
+# mode: julia
+	include("_mainmenue!.jl")
+# time: 2024-04-20 08:42:03 UTC
+# mode: julia
+	print
+# time: 2024-04-20 08:42:35 UTC
+# mode: julia
+	println(4711)
+# time: 2024-04-20 08:44:20 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 08:45:36 UTC
+# mode: julia
+	using ReplMaker
+# time: 2024-04-20 08:47:05 UTC
+# mode: pkg
+	rm PyPlot
+# time: 2024-04-20 08:47:21 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 08:58:41 UTC
+# mode: julia
+	cls()
+# time: 2024-04-20 09:41:22 UTC
+# mode: julia
+	print
+# time: 2024-04-20 09:41:54 UTC
+# mode: julia
+	println(4711)
+# time: 2024-04-20 09:42:25 UTC
+# mode: shell
+	ls
+# time: 2024-04-20 09:47:51 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 09:48:31 UTC
+# mode: pkg
+	rm Plots
+# time: 2024-04-20 09:49:08 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 09:49:16 UTC
+# mode: pkg
+	gc
+# time: 2024-04-20 09:49:45 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 09:49:54 UTC
+# mode: pkg
+	gc
+# time: 2024-04-20 10:09:09 UTC
+# mode: pkg
+	st
+# time: 2024-04-20 10:13:23 UTC
+# mode: pkg
+	gc
+# time: 2024-04-20 10:14:09 UTC
+# mode: julia
+	print(4711)
+# time: 2024-04-20 10:14:49 UTC
+# mode: julia
+	4711-11
