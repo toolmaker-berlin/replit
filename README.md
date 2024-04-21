@@ -3,12 +3,32 @@ Stand 20. April 2024
 sssss
 -->
 
+
+
 ***Julia programmieren mit REPLIT***
 
 Dieses Replit/Repo ***(WIP - Work In Progress)*** ist öffendlich, auch auf Github, damit ***ich*** jederzeit von überall auf meine
 Experimente und kleine Arbeiten mit ***Julia*** zugreifen kann. Spickzettel, Demos, PDFs und andere Notizen gehören dazu. Es gibt einige kleine Überschneidungen mit meinen anderen Repos die hier aber keine Rolle spielen *(Aktualität kann leider variieren)*.
 
 Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches verwenden ***(ohne Garantie)***. 
+
+- [Worum es mir geht](#worum-es-mir-geht)
+  - [CONFIGS (Resouce-Dateien, Init-Dateien)](#configs-resouce-dateien-init-dateien)
+  - [NOTES (Kopie, ungefiltert)](#notes-kopie-ungefiltert)
+  - [PDFs (Kopie, ungefiltert)](#pdfs-kopie-ungefiltert)
+  - [Demos (mit Menuesystem)](#demos-mit-menuesystem)
+  - [TEMPLATES (zum Nachsehen)](#templates-zum-nachsehen)
+- [Übersicht](#Übersicht)
+  - [Werkzeuge](#werkzeuge)
+  - [Nützliche CLI Tools](#nützliche-cli-tools)
+  - [Vim/NeoVim Plugins (offen)](#vimneovim-plugins-offen)
+  - [Julia Module (add)](#julia-module-add)
+  - [Julia Terminal I/O (in Arbeit)](#julia-terminal-io-in-arbeit)
+  - [Nützliches für Apple (MacOS und iOS)](#nützliches-für-apple-macos-und-ios)
+  - [Nützliches für Android](#nützliches-für-android)
+  - [Movement/Keys (Angepaßt)](#movementkeys-angepaßt)
+- [Merke](#merke)
+- [Rechtliches](#rechtliches)
 
 
 # Worum es mir geht
@@ -116,12 +136,9 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 
 ## Nützliches für Apple (MacOS und iOS)
 
-- One Markdown - Bester Markdown Editor (Mac)
-- iTerm2 - Bestes Terminalprogramm (Mac)
 - Blink - Terminalprogramm mit MOSH (ios)
 - Termius - Terminal Emulator (ios)
 - UpNote - Notizen (alle Platformen)
-- GNU_Core_Utilities  - `brew install coreutils` (wikipedia)
 - usw.
 
 ## Nützliches für Android
@@ -129,10 +146,9 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 - Userland - Linux
 - Termius - Terminal Emulator
 - UpNote - Notizen (alle Platformen)
-- Microsoft Swift Keys (ohne Swift)
 - usw.
 
-## Standart Movement/Keys (Mac)
+## Movement/Keys (Angepaßt)
 
 - Cursor, BS, FN-BS, Enter (Normal)
 - CMD Cursor -> BOF/EOF, POS1/END (je App)
@@ -154,8 +170,9 @@ Spezial \ | Shift Option 7
 
 # Merke
 
-> Retirement is: “Not having the need to work for money. Plus, the freedom to start and stop doing anything with no consequences.”
+> Retirement is: “Not having the need to work for money. Plus, the freedom to start and stop doing anything with no consequences.” - Unbekannt
 
+> “I don’t think there is one size that fits all” — Steve Ballmer
 
 # Rechtliches
 

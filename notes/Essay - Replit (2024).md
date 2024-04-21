@@ -1,10 +1,11 @@
-Stand 10. April 2024
+Stand 21. April 2024
 
 # Julia mit Replit (Essay) 
 
-Replit ist vereinfacht gesagt ein Anbieter einer cloudbasierten Lösung für Programmierer, die kleine Projekte in verschiedenen Programmiersprachen entwickeln möchten, allerdings in erster Linie zu Lernzwecken. Das Replit noch weit aus mehr zu bieten hat ist nicht Thema dieses Essays.
+Replit ist, vereinfacht gesagt, ein Anbieter einer cloudbasierten Lösung für Programmierer, die kleine Projekte in verschiedenen Programmiersprachen entwickeln möchten, allerdings in erster Linie zu Lernzwecken. Das Replit noch weit aus mehr zu bieten hat ist nicht Thema dieses Essays.
 
 Der Einstieg ist durch eine vorinstallierte IDE und hauseigene Benutzerführung zur Administration sehr leicht und zudem kostenlos. Das kostenlose Angebot kann durch ein Abonnement hinreichend erweitert werden.
+
 
 ## Zugang
 
@@ -15,7 +16,8 @@ Der Einstieg ist durch eine vorinstallierte IDE und hauseigene Benutzerführung 
 - Desktop-App für Windows
 - Desktop-App für macOS (Intel & M1)
 
-Das Verhalten von Replit variiert leicht je nach Zugriffsmethode. Eine Anmeldung ist in jedem Fall erforderlich. Die Desktop-Versionen können nach einer Anmeldung im Browser geladen werden (Sidebar unten) oder über diesen Link: https://replit.com/desktop
+
+Das Verhalten von Replit variiert leicht je nach Zugriffsmethode. Eine Anmeldung ist in jedem Fall erforderlich. Die Desktop-Versionen können nach einer Anmeldung im Browser geladen werden (Sidebar unten) oder über diesen Link: https://replit.com/desktop. Die „Apps „ entsprechen weitestgehend den Browserversionen, allerdings mit mehr Bildschirmfläche. 
 
 Replit konzentriert sich auf Programmiersprachen, die überwiegend interaktiv verwendet werden können. Der Firmenname 'REPLIT' leitet sich von der Arbeitsweise einer 'REPL' (Read-Eval-Print-Loop) ab.
 
@@ -36,13 +38,13 @@ Seit meinem ersten Ausprobieren im Jahr 2022 hat sich Replit in vielerlei Hinsic
 
 - Mit Android ist mobiles Arbeiten ohne BT-Tastatur tricky, da die Android App eine Voll-Tastatur mit Korrekturvorschlägen erzwingt, was zu ständigen Eingabefehlern führt. Abhilfe: Alternative Tastatur (ohne automatische Komfortfunktionen) installieren und diese für Replit benutzen. Hier hat sich Codeboard bewährt. Mit einer ansonsten für Terminals gut geeigneten Bildschirmtastatur, wie z.B. Microsoft Swift Keyboard, ist es unnötig schwierig Replit zu bedienen, auch weil Replit weitestgehend auf zusätzliche Cursor- und Control-Tasten in der App verzichtet.
 
-- Mit iOS oder iPadOS wird das mobile Arbeiten unnötig erschwert, da Cursor- und Control-Tasten der App fehlen. Das oben erwähnte Microsoft Swift Keyboard ist bei weiten nicht so leistungsfähig wie unter Android. Letztlich ist "MyKeyboard" oder „xKeyboard“ zu empfehlen, da sie frei konfigurierbar sind und so bestens an die Bedürfnisse des Programmierers angepasst werden können, allerdings ohne Cursor- und Control-Tasten, wie bei Apples Bildschirmtastaturen leider üblich.
+- Mit iOS oder iPadOS wird das mobile Arbeiten unnötig erschwert, da Cursor- und Control-Tasten der App fehlen. Das oben erwähnte Microsoft Swift Keyboard ist bei weiten nicht so leistungsfähig wie unter Android. Letztlich wären "MyKeyboard" oder „xKeyboard“ zu empfehlen, da sie frei konfigurierbar sind und so bestens an die Bedürfnisse des Programmierers angepasst werden können, allerdings ohne Cursor- und Control-Tasten, wie bei Apples Bildschirmtastaturen leider üblich. Letztlich bevorzuge ich „Fleksy“ parallel zur iOS Tastatur mit ähnlicher Belegung und zusätzlicher Ziffernreihe. Eigene Tasten können auch definiert werden, machen das Arbeiten mit iOS aber nicht wirklich besser. 
 
 - Erfreulicherweise kann man mit einigen Tricks eine SHELL so konfigurieren, dass die Julia REPL auch mit hinzugefügten Julia-Paketen, Vim und Vifm läuft. Mit Androiden läßt sich in der Shell so gut arbeiten. Bei Verwendung von iOS oder iPadOS gibt es keine Cursor- oder Control-Tasten. Einzig Ctrl-C, Ctrl-D, Ctrl-Z, ESC und Tab sind als Buttons vorhanden. Somit muss man Vim und Vifm geschickt anpassen, wenn man keine BT-Tastatur verwendet.
 
 - In der Shell und besonders im Vim oder Nano stehen diverse Zeichen die mit ALT erreicht werden nicht zur Verfügung. Dies gilt für den Browser und die Desktop Apps. Unter Android und iOS funktioniert es mit `[]{}\|` da die Zeichen auf dem Bildschirmtastaturen vorhanden sind. 
 
-- Subjektiv kommt es, zumindest in der kostenlosen Version, auf Androiden wesentlich häufiger zu unschönen Verzögerungen der Ein- und Ausgaben per Tastatur, als unter iOS. Auch zu gänzlichen verschlucken von Tastenanschlägen.
+- Subjektiv kommt es, zumindest in der kostenlosen Version, auf Androiden wesentlich häufiger zu unschönen Verzögerungen der Ein- und Ausgaben per Tastatur, als unter iOS. Auch das gänzlichen verschlucken von Tastenanschlägen tritt häufig mit Android auf.
 
 - In alten Versionen der App war auf dem iPad nur die Landscape-Ansicht möglich, heute folgt die IDE zumindest der Ausrichtung.
 
@@ -64,25 +66,35 @@ Seit meinem ersten Ausprobieren im Jahr 2022 hat sich Replit in vielerlei Hinsic
 
 - Zusätzlich kann per 1-Click eine ZIP-Datei von allen Dateien runtergeladen werden (Backup).
 
-- Noch eine kleine Einschränkung: die virtuelle Maschine stoppt sehr schnell, wenn man die App wechselt, z.B. wenn man im Browser recherchiert. Das ist lästig. Allerdings gibt es in Replit ein KI-Chatprogramm das man alternativ benutzen kann. In der Shell geht das reconnect viel schneller, aber man muss die Shell neu initiieren mit dem Konfigurations-Skript. 
+- Noch eine kleine Einschränkung mit Android und iOS: die virtuelle Maschine stoppt sehr schnell, wenn man die App wechselt, z.B. wenn man im Browser recherchiert. Das ist lästig. Allerdings gibt es in Replit ein KI-Chatprogramm das man alternativ benutzen kann. In der Shell geht das reconnect viel schneller, aber man muss die Shell neu initiieren mit dem (selbst entwickelten) Konfigurations-Skript. 
 
-- Die voreingestellte ‚main.jl‘ Datei per RUN-BUTTON lässt sich nicht wiederholen, das ist ein Bug! In der Shell funktioniert es. 
+- Die voreingestellte ‚main.jl‘ Datei per RUN-BUTTON lässt sich nicht immer fehlerfrei ohne aufhängen wiederholen, das ist ein Bug! In der Shell funktioniert es. 
 
-- Mit Samsung Oberfläche ist auch Multitasking (zwei Fenster) möglich  
+- Mit Samsung Oberfläche wäre auch Multitasking (zwei Fenster) möglich  
 
-- In der Freien Version sind alle Repl's die man erzeugt öffentlich einsehbar
+- In der Freien Version sind alle Repl's die man erzeugt öffentlich einsehbar. Von GitHub kann man nur öffentliche Repos importieren. 
 
 - In der Bezahlversion ist zudem ein SSH Zugang zu den Repl's möglich 
+
+
+## Empfehlung 
+
+* Umfangreiche Arbeiten am Desktop mittels App
+* Mobiles Arbeiten bevorzugt unter iOS und primär in der Shell mit vifm/vim,im Einzelfall auch mit dem Editor
+* Julia-Repl in der Shell ist Tricky
 
 
 ## Zusammenfassung
 
 Insgesamt bietet Replit eine cloudbasierte Lösung für Programmierer, die vor allem für Lernzwecke konzipiert ist. Der Zugang erfolgt über verschiedene Plattformen wie Browser, Desktop-Apps und mobile Geräte, wobei es je nach Zugriffsmethode leichte Unterschiede im Verhalten gibt. Die Erfahrungen mit Replit variieren, wobei insbesondere die Nutzung auf mobilen Geräten mit Einschränkungen verbunden ist, jedoch durch externe Tastaturen verbessert werden kann. Die Unterstützung für verschiedene Programmiersprachen wie Julia ist gegeben, obwohl der Editor für Julia im Vergleich zu anderen Sprachen hinter seinen Möglichkeiten zurückbleibt. Trotz einiger Schwierigkeiten wie störender KI im Editor und Einschränkungen auf bestimmten Systemen bietet Replit Funktionen wie Git-Backups und ermöglicht die Konfiguration der SHELL für erweiterte Nutzungsmöglichkeiten.
 
-<!--
-Da iPhones auch in anderer Hinsicht bessere Software bieten und letztlich eine bessere Hardware haben (außer in Bezug auf Falt-Eigenschaften), bleibt von meinem "Mobil First..."-Experiment (vgl. weiteres Essay) nur übrig: Zurück zum iPhone! Warum? Replit ersetzt für mich überdimensionierte Möglichkeiten wie Userland, CoCalc oder einen eigenen Server (per SSH App) perfekt.
+Da iPhones auch in anderer Hinsicht bessere Software bieten und letztlich eine bessere Hardware haben (außer in Bezug auf Falt-Eigenschaften), bleibt von meinem "Mobil First..."-Experiment (vgl. weiteres Essay) nur übrig: Zurück zum iPhone, unterstützt vom Mac/Macbook. 
 
-Darüber hinaus wird in Zukunft verstärkt der 80/20-Ansatz zum Julia & Vim-Hobby verfolgt (vgl. weiteres Essay), was sich in der Lern- und Probierphase hervorragend mit Replit erledigen lässt.
+Warum? Replit ersetzt für mich überdimensionierte Möglichkeiten wie Userland, CoCalc oder einen eigenen Server (per SSH App) perfekt.
+
+Darüber hinaus wird von mir in Zukunft verstärkt der 80/20-Ansatz zum Julia & Vim-Hobby verfolgt (vgl. weiteres Essay), was sich in der aktuellen Lern- und Probierphase hervorragend mit Replit erledigen lässt.
+
+<!--
 -->
 
 
@@ -110,7 +122,7 @@ Dennoch gibt es Möglichkeiten, diese Herausforderungen zu bewältigen.
 
 - Damit Vim/Nvim in der Shell richtig funktionieren muss `set backspace=indent,eol,start` gesetzt werden (vimrc).
 
-- Darüberhinaus müssen für den Zugang via Browser und Shell Keybindings `[]{}\|` für die Bash und für Vim/Nano eingerichtet werden (siehe Skripte). Ich verwende die Umlaute. Auf US-Tastaturen besteht das Problem wahrscheinlich nicht. 
+- Darüberhinaus müssen für den Zugang via Browser und Shell Keybindings `[]{}\|@` für die Bash und für Vim/Nano eingerichtet werden (siehe Skripte). Ich verwende die Umlaute. Auf US-Tastaturen besteht das Problem wahrscheinlich nicht. 
 
 
 ## Nützliche CLI Tools 
@@ -127,10 +139,10 @@ Dennoch gibt es Möglichkeiten, diese Herausforderungen zu bewältigen.
 - `fzf` - Fuzzy File Find
 - `***** p7zip` - zipper - nicht mit nix
 - `wget` - Files aus dem Internet laden
- - `vifm` (glow/walk/nnn/ranger) - Filemanager (x,xg,xh,xxx)
- - `***** frogmouth` (glow, mdv, mdless, grip) - Markdown Viewer nicht mit nix
- - `lftp`- FTP Programm 
- - `glow`- markdown reader
+- `vifm` (glow/walk/nnn/ranger) - Filemanager
+- `***** frogmouth` (glow, mdv, mdless, grip) - Markdown Viewer nicht mit nix
+- `lftp`- FTP Programm 
+- `glow`- markdown reader
 
 
 ## Meine aktuellen Skripts
@@ -146,7 +158,7 @@ Dennoch gibt es Möglichkeiten, diese Herausforderungen zu bewältigen.
 *   Distributions v0.25.107
 *   OhMyREPL v0.5.24
 *   PyCall v1.96.4
-*   PyPlot v2.11.2 (Kein Plot - Python?)
+*   PyPlot v2.11.2 (Kein Plot)
 *   ReplMaker v0.2.7
 *   Revise v3.5.14
 *   Term v2.0.5
@@ -155,7 +167,6 @@ Dennoch gibt es Möglichkeiten, diese Herausforderungen zu bewältigen.
 ### Shell und Julia Pakete einrichten (source z)
 
 ```bash
-
 clear
 
 if [[ -z "$WDIR" ]]; then
@@ -171,22 +182,28 @@ if [ ! -L ~/.vim ]; then
   ln -s $WDIR/.vifmrc ~/.vifmrc
   ln -s $WDIR/.julia/ ~/.julia
   cp -r $WDIR/.local/ /home/runner/
+  mkdir /home/runner/.config/vifm
+  cp $WDIR/.local/favicons.vifm /home/runner/.config/vifm
 
 fi
 
 alias c="clear"
 alias x="vifm"
+alias X="cd $WDIR && vifm $WDIR"
 alias nvim="vim"
 alias rst="source $WDIR/z"
 alias cc="cd $WDIR"
 alias ed="vim"
 alias edn="vim $WDIR/.vimrc"
 alias edz="vim $WDIR/z"
-alias m="julia $WDIR/mainmenue.jl"
-alias r="julia $WDIR/main.jl"
-alias e="vim $WDIR/mainmenue.jl"
+alias m="cd $WDIR/demo && julia $WDIR/demo/_mainmenue!.jl"
+alias r="julia $WDIR/_work.jl"
+alias e="vim $WDIR/_work.jl"
 alias jj="julia -q"
+alias JJ="julia -iq $WDIR/romio/romio-ok.jl"
+alias Jj="julia -iq $WDIR/romio/romio-ok.jl"
 alias jl="exa -1 --color=always --group-directories-first --sort name --no-user --git *jl"
+alias lj="exa -1 --color=always --group-directories-first --sort name --no-user --git *jl"
 alias ls="exa --color=always --group-directories-first --sort name --no-user --git --time-style iso"
 alias l="exa -1l --color=always --group-directories-first --sort name --no-user --git --time-style iso --no-permissions"
 alias ll="exa -a1l --color=always --group-directories-first --sort name --no-user --git --no-time " #--no-filesize"
@@ -205,7 +222,7 @@ bind '"\Ö": "{"'
 bind '"\Ä": "}"'
 bind '"\ü": "\\"'
 bind '"\Ü": "|"'
-bind '"\ß": "~"'
+bind '"\ß": "@"'
 
 ```
 
@@ -247,6 +264,7 @@ inoremap Ö {
 inoremap Ä }
 inoremap ü \
 inoremap Ü \|
+inoremap ß @
 
 nnoremap ö [
 nnoremap ä ]
@@ -254,6 +272,7 @@ nnoremap Ö {
 nnoremap Ä }
 nnoremap ü \
 nnoremap Ü \|
+nnoremap ß @
 
 vnoremap ö [
 vnoremap ä ]
@@ -261,6 +280,9 @@ vnoremap Ö {
 vnoremap Ä }
 vnoremap ü \
 vnoremap Ü \|
+vnoremap ß @
+
+
 
 " restore cursor position
 augroup restore_pos | au!
@@ -291,12 +313,15 @@ nnoremap <silent> ll <c-w>w
 
 ```Julia
 # --------------------------
-# Nur 1xRun (main.jl) (DEMO)
-# REPLIT macht Fehler, 
+# REPLIT macht Fehler!
 # (RUN/STOP/EDIT/RUN-ZYKLUS)
-# besser die SHELL benutzen!
+# besser nur SHELL benutzen!
 #            ===============
-# Stand 8. April 2024
+#   + MAC ohne  @[]{}\| usw. 
+#   + iPhone ohne Cursor ...
+#   ========================
+#
+# Stand 19. April 2024
 # --------------------------
 
 try
@@ -306,11 +331,12 @@ catch
   run(`sh -c $script`;wait=true)
 end
 
-include("mainmenue.jl")
+using OhMyREPL
+cd("demo")
+include("demo/_mainmenue!.jl")
+println("\033c","Julia Repl Mode ...!")
 
 # exit(0) # KEIN EXIT
-# STOP/EDIT/RUN 
-# ODER SHELL BENUTZEN!
 
 ```
 
@@ -490,6 +516,23 @@ filetype *.zip,*.jar,*.war,*.ear
 fileviewer *.zip,*.jar,*.war,*.ear zip -sf %c, echo "No zip to preview:"
 
 
+" Start-Varianten mit ! hinten am Namen "ohne warten" muessen zuerst definiert werden 
+" -----------------------------------------------------------------------------------
+
+filetype {*!.py},<.>,
+       \ {RUN Python ohne Stop}
+       \ clear && python %f 
+
+filetype {*!.jl},<.>,
+       \ {RUN Julia ohne Stop}
+       \ clear && julia -q %f 
+
+filetype {*.md},<.>,
+       \ {MD mit vim read only }
+       \ vim -M %c, 
+       \ {MD mit Glow }
+       \ glow -p -s light %c
+
 " julia
 filetype {*.jl},<.>,
        \ {RUN Julia}
@@ -501,8 +544,11 @@ filetype {*.jl},<.>,
        \ {START Julia (REPL only)}
        \ clear && julia -iq %f
 
-" ipython
-" filetype {*.py},<.>,
+" ipython/python (Replit/iMac24)
+filetype {*.py},<.>,
+       \ {RUN Python}
+       \ clear && python %f && echo 'Press ENTER to continue ...'; read -r dummy
+
 "        \ {RUN IPython (via PyPy3)}
 "        \ clear && pypy3 -m IPython %f && echo 'Press ENTER to continue ...'; read -r dummy,
 "        \ {RUN IPython (PyPy3) interactiv}
@@ -510,19 +556,9 @@ filetype {*.jl},<.>,
 "        \ {START IPython (PyPy3) REPL only}
 "        \ clear && pypy3 -m IPython #
 
-" filetype {*.pyexe},<.>,
+" filetype {*!.py},<.>,
 "        \ {RUN IPython ohne Stop (via PyPy3)}
 "        \ clear && pypy3 -m IPython %f # && echo 'Test (continue...)'; read -r dummy,
-
-filetype {*.jlexe},<.>,
-       \ {RUN Julia ohne Stop}
-       \ clear && julia -q %f # && echo 'no key to continue...'; read -r dummy,
-
-filetype {*.md},<.>,
-       \ {MD mit vim read only }
-       \ vim -M %c, 
-       \ {MD mit Glow }
-       \ glow -p -s light %c
 
 
 " ------------------------------------------------------------------------------
@@ -536,7 +572,8 @@ filetype {*.md},<.>,
 " set fillchars=vborder:│
 
 " Filter-out build and temporary files
-" filter! {*.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
+filter! {*.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
+filter {*.nix, 9, z, *.lo,*.o,*.d,*.class,*.pyc,*.pyo,.*~}
 
 
 " ------------------------------------------------------------------------------
@@ -562,6 +599,7 @@ filetype {*.md},<.>,
 
 " https://github.com/cirala/vifm_devicons
 " source /Users/user/.config/vifm/favicons.vifm 
+" source ~/.config/vifm/favicons.vifm 
 
 
 " ------------------------------------------------------------------------------
@@ -569,7 +607,7 @@ filetype {*.md},<.>,
 " ------------------------------------------------------------------------------
 
 " Start shell in current directory
-nnoremap s :shell<cr>
+" nnoremap s :shell <cr>
 
 " Display sorting dialog
 nnoremap S :sort<cr>
@@ -635,6 +673,7 @@ nnoremap Hc :com<cr>
 nnoremap HC :com<cr>
 
 " nnoremap ,ss :saveconf<cr>
+
 ```
 
 ## Schlusswort
