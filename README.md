@@ -76,9 +76,9 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 
 ## Werkzeuge
 
-  - vifm (VIM orientierter Filemanager)
-  - vim/nvim (Editor)
-  - julia (Programmiersprache)
+- vifm (VIM orientierter Filemanager)
+- vim/nvim (Editor)
+- julia (Programmiersprache)
 
 
 ## Nützliche CLI Tools 
@@ -105,21 +105,22 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 - **tpope/vim-commentary** - Block-Kommentar
 - JuliaEditorSupport/julia-vim - FÜR JULIA OK
 - **vifm/vifm.vim** - MEIN bester Filemanager
--
+
+
 - ## Julia Module (add)
 
-  - Revise - Autoreload *.jl
-  - BenchmarkTools - Benchmarks und Timing
-  - OhMyREPL - REPL aufgebohrt
-  - OffsetArrays - Arrays 0...n oder anderen Index
-  - CarouselArrays v0.1.0 - zum Vergleich
-  - Crayons - Für Farben
-  - Debugger - Fehlersuche
-  - Infiltrator - Fehlersuche
-  - ReplMaker - Eigene REPL definieren
-  - PyCall - Schnittstelle zu Python
-  - Distributions - MultiCore Unterstützung
-  - Primes - Für ein Beispiel
+- Revise - Autoreload *.jl
+- BenchmarkTools - Benchmarks und Timing
+- OhMyREPL - REPL aufgebohrt
+- OffsetArrays - Arrays 0...n oder anderen Index
+- CarouselArrays v0.1.0 - zum Vergleich
+- Crayons - Für Farben
+- Debugger - Fehlersuche
+- Infiltrator - Fehlersuche
+- ReplMaker - Eigene REPL definieren
+- PyCall - Schnittstelle zu Python
+- Distributions - MultiCore Unterstützung
+- Primes - Für ein Beispiel
 
 ## Julia Terminal I/O (in Arbeit)
 
@@ -148,7 +149,7 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 
 ## Movement/Keys (Angepaßt)
 
-<!--- (3x'-' für PANDOC) 
+<!--- (3x'-' für PANDOC)
 
 - Cursor, BS, FN-BS, Enter (Normal)
 - CMD Cursor -> BOF/EOF, POS1/END (je App)
