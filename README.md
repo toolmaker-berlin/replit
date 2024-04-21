@@ -1,7 +1,5 @@
 Stand 20. April 2024 
-<!--- (3x'-' für PANDOC) 
-sssss
--->
+
 
 
 
@@ -150,6 +148,8 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 
 ## Movement/Keys (Angepaßt)
 
+<!--- (3x'-' für PANDOC) 
+
 - Cursor, BS, FN-BS, Enter (Normal)
 - CMD Cursor -> BOF/EOF, POS1/END (je App)
 - Option Cursor -> next/last-Word, PageUp/PageDN (?)
@@ -167,6 +167,8 @@ Spezial \| | Option 7
 Spezial \ | Shift Option 7
 @ | Option l (L)
 € | Option e
+
+-->
 
 # Merke
 

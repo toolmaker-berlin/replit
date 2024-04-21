@@ -7,7 +7,7 @@ println(i)
 end
 
 #=
-#
+# 12345678o.123456789.123456789.123456789.
 # Hier mal bissel mit vim spielen
 # und das verschlucken von zeichen
 # beobachten. Kommt im vim und

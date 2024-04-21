@@ -10,6 +10,8 @@
 " Main settings
 " ------------------------------------------------------------------------------
 
+set rnu
+
 set vicmd=vim
 set syscalls
 set trash
