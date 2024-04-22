@@ -53,7 +53,7 @@ set nowrap
 set statusline=" %= %A %10u:%-7g %15s %20d "
 
 " List of color schemes to try (picks the first one supported by the terminal)
-colorscheme dvmlight Default Default-256 molokai papercolor-light
+colorscheme dwmlight Default Default-256 molokai papercolor-light
 
 " ohne SET -> macht ONE-PANE-Mode (:on geht auch)
 only

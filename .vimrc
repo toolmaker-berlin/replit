@@ -33,8 +33,6 @@ set showmatch
 
 set wildmenu wildmode=longest:full,full wildcharm=<Tab>
 
-nnoremap Zz ZZ
-nnoremap Zq ZQ
 
 inoremap <c-a> <esc>0i
 inoremap <c-e> <esc>A
@@ -42,13 +40,23 @@ inoremap <c-k> <esc>l<esc>d$<esc>A
 inoremap <c-u> <esc>dd<esc>i<cr><esc>ki
 
 inoremap ,, ,,
-inoremap Zz <esc>ZZ
-inoremap ZZ <esc>ZZ
 
 inoremap Aa <esc>0i
 inoremap Ee <esc>A
 inoremap Kk <esc>l<esc>d$<esc>A
 inoremap Uu <esc>dd<esc>i<cr><esc>ki
+
+nnoremap <silent> ll <c-w>w
+
+inoremap <silent> ZZ <esc>ZZ
+inoremap <silent> Zz <esc>ZZ
+nnoremap <silent> Zz ZZ
+inoremap <silent> Zq <esc>ZQ
+inoremap <silent> ZQ <esc>ZQ
+nnoremap <silent> Zq ZQ
+nnoremap <silent> qq <esc>:cq 1<cr>
+nnoremap <silent> Qq <esc>:cq 1<cr>
+nnoremap <silent> QQ <esc>:cq 1<cr>
 
 inoremap ö [
 inoremap ä ]
@@ -95,9 +103,6 @@ endif
 endfunction
 
 nnoremap <silent> 0 <esc>:call ToggleZeroBehavior()<cr>
-
-nnoremap <silent> ll <c-w>w
-
 
 
 

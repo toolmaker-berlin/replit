@@ -2,7 +2,7 @@
 
 
 println("Los geht es!")
-for in "Harald"
+for i in "Harald"
 println(i)
 end
 
