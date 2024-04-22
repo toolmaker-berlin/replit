@@ -1,4 +1,4 @@
-Stand 21. April 2024
+Stand 22. April 2024
 
 # Julia mit Replit (Essay) 
 
@@ -48,7 +48,7 @@ Seit meinem ersten Ausprobieren im Jahr 2022 hat sich Replit in vielerlei Hinsic
 
 - In alten Versionen der App war auf dem iPad nur die Landscape-Ansicht möglich, heute folgt die IDE zumindest der Ausrichtung.
 
-- Die App für iPadOS ist noch nicht optimal, z.B. das Terminal wird von der Bildschirm-Tastatur etwas überdeckt. Safari passt sich nicht gut an die Onlineversion an, daher ist das auch keine Option. Auf einem iPad Mini ist zudem alles zu klein. 
+- Die App für iPadOS ist noch nicht optimal, z.B. das Terminal wird von der Bildschirm-Tastatur etwas überdeckt. Safari passt sich nicht gut an die Onlineversion an, daher ist das auch keine Option. Auf einem iPad Mini ist zudem alles zu klein. iPads (selbst mit guter Tastatur) scheiden eigentlich zur Zeit aus. 
 
 - Die Einstellung des Zeichensatzes (Größe) gilt global für alle Zugriffsversionen (siehe oben), was problematisch ist, wenn verschiedene Geräte abwechselnd verwendet werden.
 
@@ -80,8 +80,8 @@ Seit meinem ersten Ausprobieren im Jahr 2022 hat sich Replit in vielerlei Hinsic
 ## Empfehlung 
 
 * Umfangreiche Arbeiten am Desktop mittels App
-* Mobiles Arbeiten bevorzugt unter iOS und primär in der Shell mit vifm/vim,im Einzelfall auch mit dem Editor
-* Julia-Repl in der Shell ist Tricky
+* Mobiles Arbeiten bevorzugt unter iOS und primär in der Shell mit vifm/vim, im Einzelfall auch mit dem Editor
+* Julia-Repl in der Shell ist Tricky. 
 
 
 ## Zusammenfassung

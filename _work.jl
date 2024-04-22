@@ -1,8 +1,8 @@
 # Hier jetzt neue Arbeit
-#
+
 
 println("Los geht es!")
-for i in "Harald"
+for in "Harald"
 println(i)
 end
 
