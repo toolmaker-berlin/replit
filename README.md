@@ -6,7 +6,7 @@ Stand 20. April 2024
 ***Julia programmieren mit REPLIT***
 
 Dieses Replit/Repo ***(WIP - Work In Progress)*** ist öffendlich, auch auf Github, damit ***ich*** jederzeit von überall auf meine
-Experimente und kleine Arbeiten mit ***Julia*** zugreifen kann. Spickzettel, Demos, PDFs und andere Notizen gehören dazu. Es gibt einige kleine Überschneidungen mit meinen anderen Repos die hier aber keine Rolle spielen *(Aktualität kann leider variieren)*.
+Experimente und kleine Arbeiten mit ***Julia*** zugreifen kann. Spickzettel, Demos, PDFs und andere Notizen (siehe auch Notes - Essay Replit) gehören dazu. Es gibt einige kleine Überschneidungen mit meinen anderen Repos die hier aber keine Rolle spielen *(Aktualität kann leider variieren)*.
 
 Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches verwenden ***(ohne Garantie)***. 
 
@@ -54,7 +54,7 @@ Natürlich kann und darf ***jeder*** darin stöbern und für sich nützliches ve
 - regex.md
 - tmux.md
 - vifm-spicker.md
-- Essay - Replit mit Julia (2024) 
+- ***Essay - Replit mit Julia (2024)***
 
 
 ## PDFs (Kopie, ungefiltert)

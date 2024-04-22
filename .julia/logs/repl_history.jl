@@ -457,3 +457,21 @@
 # time: 2024-04-20 10:14:49 UTC
 # mode: julia
 	4711-11
+# time: 2024-04-22 08:12:58 UTC
+# mode: pkg
+	ls
+# time: 2024-04-22 08:13:16 UTC
+# mode: pkg
+	st
+# time: 2024-04-22 08:13:46 UTC
+# mode: pkg
+	add Terminal
+# time: 2024-04-22 11:57:09 UTC
+# mode: pkg
+	ls
+# time: 2024-04-22 11:57:17 UTC
+# mode: pkg
+	st
+# time: 2024-04-22 11:58:00 UTC
+# mode: julia
+	print()

@@ -2,11 +2,36 @@ call plug#begin()
 Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
-
 set rnu
 set nu
 syntax on
+
 set backspace=indent,eol,start
+set autoindent expandtab tabstop=2 shiftwidth=2 ":retab (ggf.)
+set softtabstop=2 
+set shiftround 
+
+set backspace=indent,eol,start
+set clipboard=unnamed,unnamedplus
+set encoding=utf8
+set hlsearch ignorecase incsearch smartcase
+set lazyredraw
+set cursorline
+set ttyfast
+
+set showmode
+set ruler
+set rulerformat=%(buf:%n\ col:%c%)
+set laststatus=0 
+set showtabline=0
+
+set wrap
+set linebreak
+set scrolloff=3
+set showcmd
+set showmatch
+
+set wildmenu wildmode=longest:full,full wildcharm=<Tab>
 
 nnoremap Zz ZZ
 nnoremap Zq ZQ

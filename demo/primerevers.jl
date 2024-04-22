@@ -12,7 +12,7 @@ end
 
 print("\033c") # cls
 
-revprime(100)
+revprime(10000)
 
 """ from gmpy2 import is_prime
 

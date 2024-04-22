@@ -285,7 +285,7 @@ nnoremap cc cW<c-u>
 nnoremap A cW
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
-nnoremap ,, :write | edit $MYVIFMRC | restart full<cr> """"""
+nnoremap ,c :write | edit $MYVIFMRC | restart full<cr> """"""
 
 " Toggle wrap setting on ,w key in PREVIEW
 nnoremap ,w :set wrap!<cr>
