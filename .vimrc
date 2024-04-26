@@ -48,6 +48,8 @@ inoremap Uu <esc>dd<esc>i<cr><esc>ki
 
 nnoremap <silent> ll <c-w>w
 
+inoremap <silent> jj <esc>
+
 inoremap <silent> ZZ <esc>ZZ
 inoremap <silent> Zz <esc>ZZ
 nnoremap <silent> Zz ZZ
