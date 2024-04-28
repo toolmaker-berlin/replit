@@ -4,12 +4,12 @@ function input(prompt::AbstractString="")::String
 end
 
 
-s="Harald Slibar 4711"
+s="Harald π Slibar 4711"
 println("\033c  Suche in: ",s)
 
 x=input("Suchstring: ")
 if x==""
-  x="999"
+  x="π"
 end
 
 y=(match(r""*x,s))
